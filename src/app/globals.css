@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #030015;
 }
 
 @theme inline {
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #030015;
     --foreground: #ededed;
   }
 }
@@ -23,4 +23,86 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+/* Custom button styles */
+.btn-gradient {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(
+    to left,
+    #d032db,
+    #9e4ae5,
+    #6664f1
+  ); /* Fondo degradado para el texto */
+  color: transparent;
+  font-weight: bold;
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 0.3s, color 0.3s, border 0.3s,
+    -webkit-text-fill-color 0.3s;
+}
+
+.btn-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  padding: 2px; /* Grosor del borde */
+  background: linear-gradient(to left, #d032db, #9e4ae5, #6664f1);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.btn-gradient:hover {
+  background: #8a38f5;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+}
+
+.btn-gradient:hover::before {
+  background: none;
+}
+
+.gradient-text {
+  /* Tamaño de fuente */
+  background: linear-gradient(
+    to left,
+    #d032db,
+    #9e4ae5,
+    #6664f1
+  ); /* Degradado de rojo a azul */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-gradient-border {
+  position: relative;
+  transition: box-shadow 0.3s;
+  z-index: 0;
+}
+
+.card-gradient-border::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem; /* Ajusta según tu diseño */
+  padding: 2px;
+  background: linear-gradient(90deg, #d032db, #9e4ae5, #6664f1);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 1; /* Siempre visible */
+  transition: opacity 0.3s;
 }
