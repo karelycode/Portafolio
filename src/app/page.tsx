@@ -2,8 +2,8 @@ import {
   Banner,
   AcercaDe,
   Contacto,
-  HTecnicas,
-  HBlandas,
+  Habilidades,
+  Experiencia,
   Educacion,
 } from "@/components";
 
@@ -12,9 +12,9 @@ export default function Home() {
     <>
       <Banner />
       <AcercaDe />
-      <HTecnicas />
-      <HBlandas />
+      <Habilidades />
       <Educacion />
+      <Experiencia />
       <Contacto />
     </>
   );

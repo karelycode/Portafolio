@@ -15,7 +15,7 @@ export const TopMenu = () => {
   ];
 
   return (
-    <nav className=" fixed top-0 left-0 w-full z-50 flex px-5 lg:px-12 justify-between items-center h-16 bg-[#13132A] backdrop-blur-sm shadow-sm">
+    <nav className=" fixed top-0 left-0 w-full z-50 flex px-5 lg:px-12 justify-between items-center h-16 bg-[#13132A]/50 backdrop-blur-sm shadow-sm">
       {/* Logo Section (visible en todas las resoluciones) */}
       <div className="flex-1 flex justify-start items-center gap-2">
         <Link
@@ -38,12 +38,12 @@ export const TopMenu = () => {
       </button>
 
       {/* Navigation Links Desktop */}
-      <div className="hidden md:flex flex-1 justify-center items-center gap-8 bg-[#13132A]">
+      <div className="hidden md:flex flex-1 justify-center items-center gap-8 ">
         {menuItems.map((item) => (
           <Link
             key={item.label}
             href={item.href}
-            className={`${titleFont.className} relative px-2 py-1 text-[15px] font-normal text-white hover:text-[#6664f1] transition-colors group`}
+            className={`${titleFont.className} relative px-2 py-1 text-[15px] font-normal text-white hover:bg-[#18162a] rounded-xl transition-colors group`}
             onClick={(e) => {
               e.preventDefault();
               const el = document.querySelector(item.href);
@@ -54,19 +54,25 @@ export const TopMenu = () => {
             }}
           >
             {item.label}
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#6664f1] transition-all duration-300 group-hover:w-full"></span>
+            <span
+              className="absolute inset-x-0 mx-auto -bottom-px h-px w-1/2
++         bg-gradient-to-r from-transparent via-[#9e4ae5] to-transparent
++         scale-x-0 group-hover:scale-x-100
++         transform origin-center
++         transition-transform duration-300"
+            />
           </Link>
         ))}
       </div>
 
       {/* Navigation Links Mobile */}
       {menuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-[#13132A] shadow-lg flex flex-col items-center gap-4 py-4 md:hidden z-50 animate-fade-in">
+        <div className="absolute top-16 left-0 w-full bg-[#13132A]/50 shadow-lg flex flex-col items-center gap-4 py-4 md:hidden z-50 animate-fade-in">
           {menuItems.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className={`${titleFont.className} relative px-2 py-1 text-[15px] font-normal text-white hover:text-[#6664f1] transition-colors group`}
+              className={`${titleFont.className} relative px-2 py-1 text-[15px] font-normal text-white hover:bg-[#18162a] transition-colors group`}
               onClick={(e) => {
                 e.preventDefault();
                 const el = document.querySelector(item.href);
@@ -77,7 +83,6 @@ export const TopMenu = () => {
               }}
             >
               {item.label}
-              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#6664f1] transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
         </div>

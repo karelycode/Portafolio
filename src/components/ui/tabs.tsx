@@ -50,7 +50,7 @@ export const Tabs = ({
             onClick={() => moveSelectedTabToTop(idx)}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative px-4 py-2 rounded-xl", tabClassName)}
+            className={cn("relative px-4 py-2 rounded-xl group", tabClassName)}
             style={{ transformStyle: "preserve-3d" }}
           >
             {active.value === tab.value && (
@@ -63,14 +63,27 @@ export const Tabs = ({
                 )}
               />
             )}
+
             <span className="relative block text-black dark:text-white">
               {tab.title}
             </span>
+
+            {/* Underline lamp hover effect */}
+            <span
+              className={cn(
+                "absolute bottom-0 left-0 right-0 mx-auto h-px w-1/2",
+                "bg-gradient-to-r from-transparent via-[#9e4ae5] to-transparent",
+                "origin-center transform transition-transform duration-300",
+                // Si es el tab activo, permanece desplegada
+                active.value === tab.value ? "scale-x-100" : "scale-x-0",
+                // También aparece al hover
+                "group-hover:scale-x-100"
+              )}
+            />
           </button>
         ))}
       </div>
 
-      {/* Wrapper for content: responsive width and spacing */}
       <div className="mt-20 w-full max-w-full sm:max-w-[600px] px-2 mx-auto">
         <FadeInDiv
           tabs={tabs}

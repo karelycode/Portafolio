@@ -7,6 +7,7 @@ import {
   IoCodeSlash,
   IoServerOutline,
   IoConstructOutline,
+  IoPersonOutline,
 } from "react-icons/io5";
 
 const tabs = [
@@ -109,6 +110,8 @@ const tabs = [
           -Visualización de datos
           <br />
           -Automatización de reportes
+          <br />
+          -Implementación de soluciones en la nube
           <div className="">
             <span className="font-semibold text-[#B514C6]">Herramientas:</span>
             <br />
@@ -136,15 +139,17 @@ const tabs = [
           </div>
           <span className="font-semibold text-[#b95af9]">Habilidades:</span>
           <br />
-          -Diseño centrado en el usuario
+          -Metodologías ágiles
           <br />
-          -Diseño de interfaces responsivas
+          -Gestión de tiempos, tareas y recursos
           <br />
-          -Prototipado y wireframing
+          -Liderazgo de equipos
           <br />
-          -Arquitectura
+          -Documentación funcional y técnica
           <br />
-          -Pruebas de usabilidad
+          -Análisis de requerimientos
+          <br />
+          -Planificación y seguimiento de proyectos
           <div className="">
             <span className="font-semibold text-[#b95af9]">Herramientas:</span>
             <br />
@@ -158,15 +163,50 @@ const tabs = [
       </BackgroundGradient>
     ),
   },
+  {
+    title: "Blandas",
+    value: "blandas",
+    content: (
+      <BackgroundGradient>
+        <div className="w-full overflow-hidden relative rounded-3xl p-4 bg-[#18162a]">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="bg-[#F5278C] rounded-full p-2 flex items-center justify-center">
+              <IoPersonOutline className="text-white text-xl" />
+            </span>
+            <h2 className="text-xl font-bold">Habilidades Blandas</h2>
+          </div>
+          <span className="font-semibold text-[#F5278C]">Habilidades:</span>
+          <br />
+          -Liderazgo
+          <br />
+          -Trabajo en equipo
+          <br />
+          -Comunicación efectiva
+          <br />
+          -Creatividad
+          <br />
+          -Adaptabilidad
+          <br />
+          -Responsabilidad
+          <br />
+          -Empatía
+          <br />
+          -Resolución de problemas
+          <br />
+          -Trabajo bajo presión
+        </div>
+      </BackgroundGradient>
+    ),
+  },
 ];
 
-export const HTecnicas = () => {
+export const Habilidades = () => {
   return (
     <section className=" w-full py-12 mb-12">
       <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-0 text-center">
-        Habilidades Técnicas
+        Habilidades
       </h1>
-      <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-15">
+      <div className="h-[30rem] md:h-[30rem] [perspective:1000px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-15">
         <Tabs tabs={tabs} />
       </div>
     </section>

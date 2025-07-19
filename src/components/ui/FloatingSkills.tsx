@@ -27,7 +27,7 @@ const positions = [
 
 export const FloatingSkills: React.FC = () => {
   return (
-    <div className="w-full py-16">
+    <div className="w-full py-16 justify-center mx-auto">
       <div className="grid grid-cols-7 grid-rows-2 gap-y-12 justify-items-center px-4 sm:px-0">
         {skills.map((skill, idx) => (
           <motion.div
@@ -36,21 +36,24 @@ export const FloatingSkills: React.FC = () => {
               gridColumn: positions[idx].col,
               gridRow: positions[idx].row,
             }}
-            className={`flex flex-col items-center justify-center ${skill.color} rounded-full shadow-lg cursor-pointer
-              w-20 h-20 p-4 sm:w-32 sm:h-32 sm:p-6`}
             initial={{ y: 0 }}
-            animate={{ y: [0, -6, 0] }}
+            animate={{ y: [0, -8, 0] }}
             transition={{
               duration: 3,
               repeat: Infinity,
               repeatType: "reverse",
               ease: "easeInOut",
-              delay: idx * 0.15,
+              delay: idx * 0.2,
             }}
           >
-            <span className="text-white text-xs sm:text-sm text-center px-1">
-              {skill.title}
-            </span>
+            <BackgroundGradient
+              key={idx}
+              className="bg-[#18162a] rounded-3xl p-4  w-full h-full flex flex-col"
+            >
+              <span className="text-white text-xs sm:text-sm text-center px-1">
+                {skill.title}
+              </span>
+            </BackgroundGradient>
           </motion.div>
         ))}
       </div>
