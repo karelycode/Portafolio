@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { BackgroundGradient } from "../ui/background-gradient";
 import { IoCodeOutline, IoMapOutline } from "react-icons/io5";
 
 const info = [
@@ -31,9 +32,8 @@ const info = [
     ),
     content: (
       <div>
-        Especialidad en Transformación digital en las organizaciones,
-        <br />
-        diseño UI/UX
+        Especialidad en Transformación digital en las organizaciones y diseño
+        UI/UX
       </div>
     ),
   },
@@ -54,20 +54,20 @@ export const AcercaDe = () => {
           Apasionada por la innovación tecnológica y la aplicación de IA en
           experiencias digitales.
         </p>
-        <div className="flex flex-col md:flex-row gap-8 w-full max-w-5xl justify-center">
+        <div className="flex flex-col md:flex-row flex-wrap gap-8 w-full max-w-4xl justify-center items-stretch">
           {info.map((item, idx) => (
-            <div
+            <BackgroundGradient
               key={idx}
-              className="flex-1 bg-[#18162a] rounded-xl p-6 card-gradient-border"
+              className="bg-[#18162a] rounded-3xl p-4 min-w-[220px] w-full sm:w-[320px] max-w-sm flex-1 min-h-[180px]"
             >
-              <div className="flex items-center mb-3">
+              <div className="flex items-center mb-2">
                 {item.icon}
-                <h2 className="text-2xl font-semibold text-white">
+                <h2 className="text-lg font-semibold text-white">
                   {item.titulo}
                 </h2>
               </div>
-              <div className="text-white text-base">{item.content}</div>
-            </div>
+              <div className="text-white text-sm">{item.content}</div>
+            </BackgroundGradient>
           ))}
         </div>
       </div>

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { Button } from "../ui/moving-border";
 
 export const Banner = () => {
   return (
@@ -17,9 +18,10 @@ export const Banner = () => {
           Excelente en la resolución de problemas complejos y la innovación
           tecnológica.
         </p>
-        <a href="#projects" className="btn-gradient">
+
+        <Button as="a" href="#projects">
           Ver Proyectos
-        </a>
+        </Button>
       </div>
     </section>
   );
