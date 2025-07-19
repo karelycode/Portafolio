@@ -60,7 +60,7 @@ const tabs = [
             </span>
             <h2 className="text-xl font-bold">Desarrollo</h2>
           </div>
-          <span className="font-semibold text-[#6F5278C]">Habilidades:</span>
+          <span className="font-semibold text-[#F5278C]">Habilidades:</span>
           <br />
           -Buenas practicas de desarrollo
           <br />
@@ -74,7 +74,7 @@ const tabs = [
           <br />
           -control de versiones con Git
           <div className="">
-            <span className="font-semibold text-[#6F5278C]">Herramientas:</span>
+            <span className="font-semibold text-[#F5278C]">Herramientas:</span>
             <br />
             -Figma
             <br />
@@ -162,11 +162,11 @@ const tabs = [
 
 export const HTecnicas = () => {
   return (
-    <section className=" w-full py-12 mb-15">
+    <section className=" w-full py-12 mb-12">
       <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-0 text-center">
         Habilidades Técnicas
       </h1>
-      <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-20">
+      <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-15">
         <Tabs tabs={tabs} />
       </div>
     </section>

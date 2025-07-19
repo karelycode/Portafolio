@@ -1,5 +1,11 @@
-import Image from "next/image";
-import { Banner, AcercaDe, Contacto, HTecnicas } from "@/components";
+import {
+  Banner,
+  AcercaDe,
+  Contacto,
+  HTecnicas,
+  HBlandas,
+  Educacion,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -7,6 +13,8 @@ export default function Home() {
       <Banner />
       <AcercaDe />
       <HTecnicas />
+      <HBlandas />
+      <Educacion />
       <Contacto />
     </>
   );
