@@ -21,6 +21,14 @@ export const TopMenu = () => {
         <Link
           href="/"
           className="inline-block hover:scale-[1.02] transition-transform"
+          onClick={(e) => {
+            e.preventDefault();
+            const el = document.querySelector("#banner");
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth" });
+              setMenuOpen(false); // Cierra el menú en móvil
+            }
+          }}
         >
           <p className="text-[18px] md:text-[20px] gradient-text font-semibold">
             Karely Durán

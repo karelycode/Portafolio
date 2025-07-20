@@ -14,12 +14,14 @@ const info = [
     content: (
       <div>
         En Fortune Acoustics, mi trabajo es hacer que la experiencia digital sea
-        más amable y efectiva para las personas. Transformé las páginas de
-        promociones logrando que un 22% más de visitantes se convirtieran en
-        clientes gracias a diseños más claros y fáciles de usar. Ahora estoy
-        renovando nuestra tienda online: simplifiqué el proceso de compra para
-        que sea más rápido, y aseguré que cualquier persona, sin importar sus
-        capacidades, pueda navegarla cómodamente.
+        más amable y efectiva para las personas. Actualmente estoy renovando
+        nuestra tienda online para que la interfaz de usuario sea más intuitiva
+        y atractiva. También estoy creando constantemente landing pages para
+        mejorar la conversión.
+        <br />
+        Al igual, me encargo de la gestión de redes sociales, creando contenido
+        atractivo y relevante para nuestra audiencia, lo que nos ayuda a
+        aumentar nuestro alcance y engagement.
       </div>
     ),
   },

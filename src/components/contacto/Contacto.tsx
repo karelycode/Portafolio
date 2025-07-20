@@ -1,5 +1,6 @@
 import React from "react";
 import { IoLogoLinkedin, IoLogoGithub, IoMail } from "react-icons/io5";
+import { Button } from "../ui/moving-border";
 
 export const Contacto = () => {
   return (
@@ -13,7 +14,10 @@ export const Contacto = () => {
           tienes una idea o necesitas ayuda con desarrollo de software,
           hablemos.
         </p>
-        <div className="flex gap-6">
+        <Button as="a" href="/CV-UX Karely Duran.pdf" download>
+          Descargar CV
+        </Button>
+        <div className="flex gap-6 my-8">
           <a
             href="https://www.linkedin.com/in/karelyd-code"
             className="bg-gradient-to-tr from-[#6a5af9] to-[#e254e9] rounded-full p-4 flex items-center justify-center text-white text-2xl shadow-lg transition-transform hover:scale-110"
