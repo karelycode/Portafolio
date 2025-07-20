@@ -10,7 +10,7 @@ export const TopMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuItems = [
     { label: "Acerca", href: "#acerca" },
-    { label: "Portafolio", href: "#portafolio" },
+    { label: "Portafolio", href: "#proyectos" },
     { label: "Contacto", href: "#contacto" },
   ];
 

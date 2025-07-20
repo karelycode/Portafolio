@@ -41,7 +41,7 @@ const info = [
 
 export const AcercaDe = () => {
   return (
-    <section className=" w-full py-12 mb-15">
+    <section id="acerca" className=" w-full py-12 mb-15">
       <div className="flex flex-col items-center justify-center w-full px-4 py-12 md:py-0">
         <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-8 text-center">
           Acerca de mí

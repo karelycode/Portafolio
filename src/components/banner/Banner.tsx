@@ -1,6 +1,9 @@
 "use client";
+
+import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/moving-border";
+import { Proyectos } from "../proyectos/Proyectos";
 
 export const Banner = () => {
   return (
@@ -18,10 +21,18 @@ export const Banner = () => {
           Excelente en la resolución de problemas complejos y la innovación
           tecnológica.
         </p>
-
-        <Button as="a" href="#projects">
-          Ver Proyectos
-        </Button>
+        <Link
+          href="#proyectos"
+          onClick={(e) => {
+            e.preventDefault();
+            const el = document.querySelector("#proyectos");
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        >
+          <Button>Ver Proyectos</Button>
+        </Link>
       </div>
     </section>
   );

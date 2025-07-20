@@ -4,6 +4,7 @@ import {
   Contacto,
   Habilidades,
   Experiencia,
+  Proyectos,
   Educacion,
 } from "@/components";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Habilidades />
       <Educacion />
       <Experiencia />
+      <Proyectos />
       <Contacto />
     </>
   );
