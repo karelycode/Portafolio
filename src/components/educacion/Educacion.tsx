@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { BackgroundGradient } from "../ui/background-gradient";
+import AnimatedSection from "../common/AnimatedSection";
 
 const info = [
   {
@@ -65,29 +66,31 @@ const info = [
 
 export const Educacion = () => {
   return (
-    <section className=" w-full py-12 mb-12">
-      <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-10 text-center">
-        Educación
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto items-stretch">
-        {info.map((item, idx) => (
-          <BackgroundGradient
-            key={idx}
-            className="bg-[#18162a] rounded-3xl p-4  w-full h-full flex flex-col"
-          >
-            <div className="flex items-center mb-2">{item.period}</div>
-            <div>
-              <h2 className="text-lg font-semibold text-white mb-2">
-                {item.titulo}
-              </h2>
-            </div>
-            <div className="flex items-center mb-2">
-              <span>{item.escuela}</span>
-            </div>
-            <div className="text-white text-sm">{item.content}</div>
-          </BackgroundGradient>
-        ))}
-      </div>
-    </section>
+    <AnimatedSection>
+      <section className=" w-full py-12 mb-12">
+        <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-10 text-center">
+          Educación
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto items-stretch">
+          {info.map((item, idx) => (
+            <BackgroundGradient
+              key={idx}
+              className="bg-[#18162a] rounded-3xl p-4  w-full h-full flex flex-col"
+            >
+              <div className="flex items-center mb-2">{item.period}</div>
+              <div>
+                <h2 className="text-lg font-semibold text-white mb-2">
+                  {item.titulo}
+                </h2>
+              </div>
+              <div className="flex items-center mb-2">
+                <span>{item.escuela}</span>
+              </div>
+              <div className="text-white text-sm">{item.content}</div>
+            </BackgroundGradient>
+          ))}
+        </div>
+      </section>
+    </AnimatedSection>
   );
 };

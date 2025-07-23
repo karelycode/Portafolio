@@ -2,6 +2,7 @@
 import React from "react";
 import { Tabs } from "../ui/tabs";
 import { BackgroundGradient } from "../ui/background-gradient";
+import AnimatedSection from "../common/AnimatedSection";
 import {
   IoBrushOutline,
   IoCodeSlash,
@@ -16,7 +17,7 @@ const tabs = [
     value: "frontend",
     content: (
       <BackgroundGradient>
-        <div className="w-full overflow-hidden relative rounded-3xl p-4 bg-[#18162a]">
+        <div className="w-full overflow-hidden relative rounded-3xl p-8 bg-[#18162a]">
           <div className="flex items-center gap-2 mb-4">
             <span className="bg-[#6a5af9] rounded-full p-2 flex items-center justify-center">
               <IoBrushOutline className="text-white text-xl" />
@@ -38,12 +39,13 @@ const tabs = [
           -Diseño de experiencias digitales
           <div className="">
             <span className="font-semibold text-[#6a5af9]">Herramientas:</span>
-            <br />
-            -Figma
-            <br />
-            -Adobe XD
-            <br />
-            -Sketch
+            <p className="text-center">
+              <img
+                src="https://skillicons.dev/icons?i=figma,ai&perline=14"
+                width="85px"
+                height="700px"
+              />
+            </p>
           </div>
         </div>
       </BackgroundGradient>
@@ -73,15 +75,16 @@ const tabs = [
           <br />
           -Desarrollo de aplicaciones web y móviles
           <br />
-          -control de versiones con Git
+          -Control de versiones con Git
           <div className="">
             <span className="font-semibold text-[#F5278C]">Herramientas:</span>
-            <br />
-            -Figma
-            <br />
-            -Adobe XD
-            <br />
-            -Sketch
+            <p className="text-center mb-2 ">
+              <img
+                src="https://skillicons.dev/icons?i=java,py,flutter,dart,androidstudio,html,css,js,ts,bootstrap,tailwind,nextjs,vite,react,vercel,unity,git,github&perline=11"
+                width="620px"
+                height="700px"
+              />
+            </p>
           </div>
         </div>
       </BackgroundGradient>
@@ -92,7 +95,7 @@ const tabs = [
     value: "cloud",
     content: (
       <BackgroundGradient>
-        <div className="w-full overflow-hidden relative rounded-3xl p-4 bg-[#18162a]">
+        <div className="w-full overflow-hidden relative rounded-3xl p-8 bg-[#18162a]">
           <div className="flex items-center gap-2 mb-4">
             <span className="bg-[#B514C6] rounded-full p-2 flex items-center justify-center">
               <IoServerOutline className="text-white text-xl" />
@@ -114,12 +117,13 @@ const tabs = [
           -Implementación de soluciones en la nube
           <div className="">
             <span className="font-semibold text-[#B514C6]">Herramientas:</span>
-            <br />
-            -Figma
-            <br />
-            -Adobe XD
-            <br />
-            -Sketch
+            <p className="text-center">
+              <img
+                src="https://skillicons.dev/icons?i=mysql,postgresql,supabase,firebase,docker&perline=14"
+                width="230px"
+                height="700px"
+              />
+            </p>
           </div>
         </div>
       </BackgroundGradient>
@@ -130,7 +134,7 @@ const tabs = [
     value: "gestion",
     content: (
       <BackgroundGradient>
-        <div className="w-full overflow-hidden relative rounded-3xl p-4 bg-[#18162a]">
+        <div className="w-full overflow-hidden relative rounded-3xl p-8 bg-[#18162a]">
           <div className="flex items-center gap-2 mb-4">
             <span className="bg-[#b95af9] rounded-full p-2 flex items-center justify-center">
               <IoConstructOutline className="text-white text-xl" />
@@ -152,12 +156,13 @@ const tabs = [
           -Planificación y seguimiento de proyectos
           <div className="">
             <span className="font-semibold text-[#b95af9]">Herramientas:</span>
-            <br />
-            -Figma
-            <br />
-            -Adobe XD
-            <br />
-            -Sketch
+            <p className="text-center ">
+              <img
+                src="https://skillicons.dev/icons?i=notion,gmail,gcp,&perline=14"
+                width="180px"
+                height="700px"
+              />
+            </p>
           </div>
         </div>
       </BackgroundGradient>
@@ -168,7 +173,7 @@ const tabs = [
     value: "blandas",
     content: (
       <BackgroundGradient>
-        <div className="w-full overflow-hidden relative rounded-3xl p-4 bg-[#18162a]">
+        <div className="w-full overflow-hidden relative rounded-3xl p-8 bg-[#18162a]">
           <div className="flex items-center gap-2 mb-4">
             <span className="bg-[#F5278C] rounded-full p-2 flex items-center justify-center">
               <IoPersonOutline className="text-white text-xl" />
@@ -202,13 +207,15 @@ const tabs = [
 
 export const Habilidades = () => {
   return (
-    <section className=" w-full py-12 mb-12">
-      <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-0 text-center">
-        Habilidades
-      </h1>
-      <div className="h-[30rem] md:h-[30rem] [perspective:1000px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-15">
-        <Tabs tabs={tabs} />
-      </div>
-    </section>
+    <AnimatedSection>
+      <section className=" w-full py-12 mb-12">
+        <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-0 text-center">
+          Habilidades
+        </h1>
+        <div className="h-[30rem] md:h-[30rem] [perspective:1000px] relative flex flex-col max-w-6xl mx-auto w-full items-start justify-start my-15">
+          <Tabs tabs={tabs} />
+        </div>
+      </section>
+    </AnimatedSection>
   );
 };

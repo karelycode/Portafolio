@@ -4,11 +4,15 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/moving-border";
 import { SparklesCore } from "../ui/sparkles";
+import { motion } from "framer-motion";
 
 export const Banner = () => {
   return (
-    <section
+    <motion.section
       id="banner"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 3 }}
       className="relative w-full min-h-[30vh] py-12 mt-50 mb-35"
     >
       <div className="flex flex-col items-center justify-center w-full px-4 py-12 md:py-0">
@@ -53,6 +57,6 @@ export const Banner = () => {
           </Button>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

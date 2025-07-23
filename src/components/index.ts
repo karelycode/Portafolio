@@ -7,3 +7,4 @@ export * from "./habilidades/Habilidades";
 export * from "./educacion/Educacion";
 export * from "./experiencia/Experiencia";
 export * from "./proyectos/Proyectos";
+export * from "./common/AnimatedSection";
