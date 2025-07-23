@@ -44,6 +44,7 @@ const tabs = [
                 src="https://skillicons.dev/icons?i=figma,ai&perline=14"
                 width="85px"
                 height="700px"
+                alt="Habilidades de Diseño"
               />
             </p>
           </div>
@@ -81,6 +82,7 @@ const tabs = [
             <p className="text-center mb-2 ">
               <img
                 src="https://skillicons.dev/icons?i=java,py,flutter,dart,androidstudio,html,css,js,ts,bootstrap,tailwind,nextjs,vite,react,vercel,unity,git,github&perline=11"
+                alt="Habilidades de Desarrollo"
                 width="620px"
                 height="700px"
               />
@@ -122,6 +124,7 @@ const tabs = [
                 src="https://skillicons.dev/icons?i=mysql,postgresql,supabase,firebase,docker&perline=14"
                 width="230px"
                 height="700px"
+                alt="Habilidades de Cloud y DevOps"
               />
             </p>
           </div>
@@ -161,6 +164,7 @@ const tabs = [
                 src="https://skillicons.dev/icons?i=notion,gmail,gcp,&perline=14"
                 width="180px"
                 height="700px"
+                alt="Habilidades de Gestión de Proyectos"
               />
             </p>
           </div>
