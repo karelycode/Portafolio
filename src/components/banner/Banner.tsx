@@ -52,7 +52,7 @@ export const Banner = () => {
           >
             <Button>Ver Proyectos</Button>
           </Link>
-          <Button as="a" href="/CV-UX Karely Duran.pdf" download>
+          <Button as="a" href="/cv-Karely Duran.pdf" download>
             Descargar CV
           </Button>
         </div>

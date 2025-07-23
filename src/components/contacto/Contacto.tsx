@@ -16,7 +16,7 @@ export const Contacto = () => {
             no dudes en contactarme. Estoy abierta a nuevas oportunidades y
             emocionada por la posibilidad de trabajar juntos.
           </p>
-          <Button as="a" href="/CV-UX Karely Duran.pdf" download>
+          <Button as="a" href="/cv-Karely Duran.pdf" download>
             Descargar CV
           </Button>
           <div className="flex gap-6 my-8">
