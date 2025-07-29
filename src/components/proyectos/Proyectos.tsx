@@ -48,7 +48,7 @@ const info = [
     content: (
       <div>
         Diseño y desarrollo de una landing page de cursos especiales impartidos
-        por Fortune Acoustics y Nettcontrol. La interfaz está diseñada pcon un
+        por Fortune Acoustics y Nettcontrol. La interfaz está diseñada con un
         aire moderno y profesional, con un enfoque en la usabilidad y la
         claridad de la información.
       </div>
@@ -98,7 +98,7 @@ const info = [
         interpretados con IA. Ganadora del tercer lugar en HackDgo 2024.
       </div>
     ),
-    link: "https://budgetbuddy.vercel.app/",
+    link: "https://www.figma.com/design/yNyVfRUHeYPqzdoj1iMx4O/CLARIFY?node-id=371-2&t=Nl9zEc3richVnWt6-1",
 
     herramientas: ["Figma", "HTML", "CSS", "API de OpenAI"],
   },
