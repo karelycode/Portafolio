@@ -3,6 +3,7 @@
 import { BackgroundGradient } from "../ui/background-gradient";
 import AnimatedSection from "../common/AnimatedSection";
 import React from "react";
+import { bodyFont, titleFont } from "@/config/fonts";
 
 const info = [
   {
@@ -107,8 +108,10 @@ const info = [
 export const Proyectos = () => {
   return (
     <AnimatedSection>
-      <section id="proyectos" className="w-full py-12 mb-12">
-        <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-10 text-center">
+      <section id="proyectos" className="w-full py-12 mb-15">
+        <h1
+          className={`${titleFont.className} text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-10 text-center`}
+        >
           Proyectos
         </h1>
 
@@ -131,25 +134,35 @@ export const Proyectos = () => {
 
               {/* Contenido */}
               <div className="p-4 flex flex-col flex-1">
-                <h2 className="text-lg font-semibold text-white mb-2">
+                <h2
+                  className={`${titleFont.className} text-lg font-semibold text-white mb-2`}
+                >
                   {item.titulo}
                 </h2>
-                <span className="text-sm text-[#6665F1] mb-4">
+                <span
+                  className={`${bodyFont.className} text-sm text-[#6665F1] mb-4`}
+                >
                   {item.lugar}
                 </span>
 
-                <div className="text-white text-sm flex-1">{item.content}</div>
+                <div
+                  className={`${bodyFont.className} text-white text-sm flex-1`}
+                >
+                  {item.content}
+                </div>
 
                 {/* Herramientas al pie */}
                 <div className="mt-4">
-                  <h3 className="text-sm font-semibold text-white mb-2">
+                  <h3
+                    className={`${bodyFont.className} text-sm font-semibold text-white mb-2`}
+                  >
                     Herramientas:
                   </h3>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {item.herramientas.map((tool) => (
                       <span
                         key={tool}
-                        className="bg-gray-700/55 text-white text-xs px-2 py-1 rounded"
+                        className={`${bodyFont.className} bg-gray-700/55 text-white text-xs px-2 py-1 rounded`}
                       >
                         {tool}
                       </span>
@@ -158,7 +171,7 @@ export const Proyectos = () => {
                   <div className="flex items-center space-x-4 mb-4">
                     <a
                       href={item.link}
-                      className="text-sm text-[#6665F1] hover:underline hover:text-[#e254e9]"
+                      className={`${bodyFont.className} text-sm text-[#6665F1] hover:underline hover:text-[#e254e9]`}
                     >
                       Proyecto
                     </a>

@@ -30,7 +30,9 @@ export const TopMenu = () => {
             }
           }}
         >
-          <p className="text-[18px] md:text-[20px] gradient-text font-semibold">
+          <p
+            className={`${titleFont.className} text-[18px] md:text-[20px] gradient-text font-semibold`}
+          >
             Karely Durán
           </p>
         </Link>

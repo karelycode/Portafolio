@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/utils/cn";
+import { titleFont } from "@/config/fonts";
 
 type Tab = {
   title: string;
@@ -64,7 +65,9 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative block text-black dark:text-white">
+            <span
+              className={`${titleFont.className} relative block text-black dark:text-white`}
+            >
               {tab.title}
             </span>
 

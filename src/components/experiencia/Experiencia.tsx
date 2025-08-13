@@ -2,6 +2,7 @@
 import React from "react";
 import { BackgroundGradient } from "../ui/background-gradient";
 import AnimatedSection from "../common/AnimatedSection";
+import { bodyFont, titleFont } from "@/config/fonts";
 
 const info = [
   {
@@ -49,8 +50,10 @@ const info = [
 export const Experiencia = () => {
   return (
     <AnimatedSection>
-      <section className=" w-full py-12 mb-12">
-        <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-10 text-center">
+      <section className=" w-full py-12 mb-15">
+        <h1
+          className={`${titleFont.className} text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-10 text-center`}
+        >
           Experiencia
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-1 gap-6 max-w-7xl mx-auto items-stretch">
@@ -59,16 +62,22 @@ export const Experiencia = () => {
               key={idx}
               className="bg-[#18162a] rounded-3xl p-4  w-full h-full flex flex-col"
             >
-              <div className="flex items-center mb-2">{item.period}</div>
+              <div className={`${bodyFont.className} flex items-center mb-2`}>
+                {item.period}
+              </div>
               <div>
-                <h2 className="text-lg font-semibold text-white mb-2">
+                <h2
+                  className={`${titleFont.className} text-lg font-semibold text-white mb-2`}
+                >
                   {item.titulo}
                 </h2>
               </div>
-              <div className="flex items-center mb-2">
+              <div className={`${bodyFont.className} flex items-center mb-2`}>
                 <span>{item.lugar}</span>
               </div>
-              <div className="text-white text-sm">{item.content}</div>
+              <div className={`${bodyFont.className} text-white text-sm`}>
+                {item.content}
+              </div>
             </BackgroundGradient>
           ))}
         </div>

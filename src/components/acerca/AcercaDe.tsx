@@ -3,6 +3,7 @@ import React from "react";
 import { BackgroundGradient } from "../ui/background-gradient";
 import { IoCodeOutline, IoMapOutline } from "react-icons/io5";
 import AnimatedSection from "../common/AnimatedSection";
+import { bodyFont, titleFont } from "@/config/fonts";
 
 const info = [
   {
@@ -43,12 +44,16 @@ const info = [
 export const AcercaDe = () => {
   return (
     <AnimatedSection>
-      <section id="acerca" className=" w-full py-12 mb-15">
+      <section id="acerca" className=" w-full py-40 mb-15">
         <div className="flex flex-col items-center justify-center w-full px-4 py-12 md:py-0">
-          <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-8 text-center">
+          <h1
+            className={`${titleFont.className} text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-8 text-center`}
+          >
             Acerca de mí
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-white mb-12 max-w-6xl text-center">
+          <p
+            className={`${bodyFont.className} text-base sm:text-lg md:text-xl text-white mb-12 max-w-6xl text-center`}
+          >
             Soy ingeniera en sistemas computacionales especializada en
             transformación digital y experiencia de usuario. Combino habilidades
             técnicas con enfoque UX/UI para diseñar soluciones centradas en el
@@ -56,7 +61,7 @@ export const AcercaDe = () => {
             Apasionada por la innovación tecnológica y la aplicación de IA en
             experiencias digitales.
           </p>
-          <div className="flex flex-col md:flex-row flex-wrap gap-8 w-full max-w-4xl justify-center items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto items-stretch">
             {info.map((item, idx) => (
               <BackgroundGradient
                 key={idx}
@@ -64,11 +69,15 @@ export const AcercaDe = () => {
               >
                 <div className="flex items-center mb-2">
                   {item.icon}
-                  <h2 className="text-lg font-semibold text-white">
+                  <h2
+                    className={`${titleFont.className} text-lg font-semibold text-white`}
+                  >
                     {item.titulo}
                   </h2>
                 </div>
-                <div className="text-white text-sm">{item.content}</div>
+                <div className={`${bodyFont.className} text-white text-sm`}>
+                  {item.content}
+                </div>
               </BackgroundGradient>
             ))}
           </div>

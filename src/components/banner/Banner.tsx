@@ -5,6 +5,7 @@ import React from "react";
 import { Button } from "../ui/moving-border";
 import { SparklesCore } from "../ui/sparkles";
 import { motion } from "framer-motion";
+import { bodyFont, titleFont } from "@/config/fonts";
 
 export const Banner = () => {
   return (
@@ -13,7 +14,7 @@ export const Banner = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 3 }}
-      className="relative w-full min-h-[30vh] py-12 mt-50 mb-35"
+      className="relative w-full min-h-[30vh] py-20 mt-50 mb-35"
     >
       <div className="flex flex-col items-center justify-center w-full px-4 py-12 md:py-0">
         <div className="w-full absolute  h-screen">
@@ -27,13 +28,19 @@ export const Banner = () => {
             particleColor="#FFFFFF"
           />
         </div>
-        <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold gradient-text mb-4 text-center">
+        <h1
+          className={`${titleFont.className} text-6xl sm:text-7xl md:text-8xl font-bold gradient-text mb-4 text-center`}
+        >
           Hola, soy Karely Durán
         </h1>
-        <h2 className="text-base sm:text-2xl md:text-3xl font-bold text-white mb-4 text-center">
+        <h2
+          className={`${titleFont.className} text-base sm:text-2xl md:text-3xl font-bold text-white mb-4 text-center`}
+        >
           Ingeniera en Sistemas Computacionales
         </h2>
-        <p className="text-base sm:text-lg md:text-xl text-white mb-8 max-w-6xl text-center">
+        <p
+          className={`${bodyFont.className} text-base sm:text-lg md:text-xl text-white mb-8 max-w-6xl text-center`}
+        >
           Entusiasta de la tecnología comprometida con el crecimiento. Hábil en
           desarrollo front-end, liderazgo de proyectos y metodologías ágiles.
           Excelente en la resolución de problemas complejos y la innovación
@@ -50,10 +57,10 @@ export const Banner = () => {
               }
             }}
           >
-            <Button>Ver Proyectos</Button>
+            <Button className={`${bodyFont.className}`}>Ver Proyectos</Button>
           </Link>
           <Button as="a" href="/cv-Karely Duran.pdf" download>
-            Descargar CV
+            <span className={`${bodyFont.className}`}>Descargar CV</span>
           </Button>
         </div>
       </div>
