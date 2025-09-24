@@ -1,185 +1,152 @@
 "use client";
 
+import React from "react";
 import { BackgroundGradient } from "../ui/background-gradient";
 import AnimatedSection from "../common/AnimatedSection";
-import React from "react";
+import { useTranslation } from "react-i18next";
 import { bodyFont, titleFont } from "@/config/fonts";
 
-const info = [
-  {
-    titulo: "Rediseño e-comerce",
-    lugar: <span className="text-[#6a5af9]">Fortune Acoustics</span>,
-    img: "/ecomerce.png",
-    content: (
-      <div>
-        Rediseño de UX/UI del e-comerce de Fortune Acoustics para mejorar la
-        experiencia de los usuarios y alentarlos a generar compras.
-        <br />
-        El objetivo es crear una interfaz más atráctiva y moderna, para
-        actualizar la imagen de la marca y facilitar la navegación de los
-        usuarios.
-      </div>
-    ),
-    link: "https://www.fortuneacoustics.com/",
+// Color para el "lugar" (puedes cambiarlo o moverlo al JSON por ítem como `color`)
+const PLACE_COLOR = "#6665F1";
 
-    herramientas: ["Figma", "WordPress"],
-  },
-  {
-    titulo: "Landing page promociones",
-    lugar: <span className="text-[#6a5af9]">Fortune Acoustics</span>,
-    img: "/Landing promociones.png",
-    content: (
-      <div>
-        Diseño y desarrollo de una landing page especial para promociones de
-        Fortune Acoustics, la cuál tiene como objetivo ser un apoyo del
-        e-comerce. <br />
-        La landing page está diseñada para ser atractiva y fácil de navegar,
-        permitiendo a los usuarios encontrar rápidamente las promociones.
-      </div>
-    ),
-    link: "https://curso-delikeacliente.vercel.app",
-    herramientas: ["Figma", "Next.js", "Tailwind CSS"],
-  },
-  {
-    titulo: "Landing page cursos",
-    lugar: (
-      <span className="text-[#6a5af9]">Fortune Acoustics, Nettcontrol</span>
-    ),
-    img: "/Landing curso.png",
-    content: (
-      <div>
-        Diseño y desarrollo de una landing page de cursos especiales impartidos
-        por Fortune Acoustics y Nettcontrol. La interfaz está diseñada con un
-        aire moderno y profesional, con un enfoque en la usabilidad y la
-        claridad de la información.
-      </div>
-    ),
-    link: "https://curso-delikeacliente.vercel.app",
+// Helpers
+const lines = (v: unknown): string[] => {
+  if (Array.isArray(v)) return v.filter(Boolean);
+  if (typeof v === "string")
+    return v
+      .split("\n")
+      .map((s) => s.trim())
+      .filter(Boolean);
+  return [];
+};
 
-    herramientas: ["Figma", "Next.js", "Tailwind CSS", "Zoho"],
-  },
-  {
-    titulo: "Clarify",
-    lugar: <span className="text-[#6a5af9]">Innovatec 2024</span>,
-    img: "/logo-clarify.jpeg",
-    content: (
-      <div>
-        <span>
-          Diseño, desarrollo y gestión de un proyecto de app móvil para personas
-          con discapacidad visual, la cual implementa un asistente de IA que
-          ayuda a los usuarios a navegar su entorno.
-        </span>
-        <br />
-        Ganadores del primer lugar de Innovatec 2024 a nivel local, tercer lugar
-        a nivel regional y mención honorífica por participación destacada a
-        nivel nacional.
-        <br />
-        Si quieres ver el proyecto, puedes visitar la landing page creada por{" "}
-        <a
-          href={"https://marcotbcreator.dev/es"}
-          className="text-sm text-[#6665F1] hover:underline hover:text-[#e254e9]"
-        >
-          MarcoTheBigCreator
-        </a>
-        .
-      </div>
-    ),
-    link: "https://clarify-page.vercel.app/es",
-
-    herramientas: ["Figma", "Flutter", "PyTorch", "Firebase"],
-  },
-  {
-    titulo: "BudgetBuddy",
-    lugar: <span className="text-[#6a5af9]">HackDgo</span>,
-    img: "/budget.png",
-    content: (
-      <div>
-        Diseño y desarrollo de una aplicación web para ayudar a los usuarios a
-        gestionar su presupuesto de manera eficiente a través de análisis
-        interpretados con IA. Ganadora del tercer lugar en HackDgo 2024.
-      </div>
-    ),
-    link: "https://www.figma.com/design/yNyVfRUHeYPqzdoj1iMx4O/CLARIFY?node-id=371-2&t=Nl9zEc3richVnWt6-1",
-
-    herramientas: ["Figma", "HTML", "CSS", "API de OpenAI"],
-  },
-];
+type ProyectoItem = {
+  titulo?: string;
+  lugar?: string;
+  img?: string;
+  descripcion?: string | string[];
+  link?: string;
+  herramientas?: string[];
+  color?: string; // opcional si luego quieres colorear el "lugar" por ítem
+};
 
 export const Proyectos = () => {
+  const { t } = useTranslation();
+
+  // En tu JSON ya existe "proyectos": [...]
+  const proyectos = t("proyectos", { returnObjects: true }) as ProyectoItem[];
+
+  // Para el H1 uso el header de accesibilidad que ya tenías traducido a "Proyectos"
+  const header = t("aboutAccessibility.projectsHeader");
+
   return (
     <AnimatedSection>
       <section id="proyectos" className="w-full py-12 mb-15">
         <h1
           className={`${titleFont.className} text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-10 text-center`}
         >
-          Proyectos
+          {header || "Proyectos"}
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr max-w-7xl mx-auto">
-          {info.map((item, idx) => (
-            <BackgroundGradient
-              key={idx}
-              className="bg-[#18162a] rounded-3xl overflow-hidden flex flex-col h-full"
-            >
-              {/* Imagen */}
-              <div className="flex-shrink-0 w-full px-4 pt-4">
-                <div className="w-full h-40 overflow-hidden rounded-lg">
-                  <img
-                    src={item.img}
-                    alt={item.titulo}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+          {(Array.isArray(proyectos) ? proyectos : []).map((item, idx) => {
+            const {
+              titulo = "",
+              lugar = "",
+              img = "",
+              descripcion,
+              link = "#",
+              herramientas = [],
+              color,
+            } = item;
 
-              {/* Contenido */}
-              <div className="p-4 flex flex-col flex-1">
-                <h2
-                  className={`${titleFont.className} text-lg font-semibold text-white mb-2`}
-                >
-                  {item.titulo}
-                </h2>
-                <span
-                  className={`${bodyFont.className} text-sm text-[#6665F1] mb-4`}
-                >
-                  {item.lugar}
-                </span>
+            const descLines = lines(descripcion);
+            const placeColor = color ?? PLACE_COLOR;
 
-                <div
-                  className={`${bodyFont.className} text-white text-sm flex-1`}
-                >
-                  {item.content}
-                </div>
-
-                {/* Herramientas al pie */}
-                <div className="mt-4">
-                  <h3
-                    className={`${bodyFont.className} text-sm font-semibold text-white mb-2`}
-                  >
-                    Herramientas:
-                  </h3>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {item.herramientas.map((tool) => (
-                      <span
-                        key={tool}
-                        className={`${bodyFont.className} bg-gray-700/55 text-white text-xs px-2 py-1 rounded`}
-                      >
-                        {tool}
-                      </span>
-                    ))}
+            return (
+              <BackgroundGradient
+                key={`${titulo}-${idx}`}
+                className="bg-[#18162a] rounded-3xl overflow-hidden flex flex-col h-full"
+              >
+                {/* Imagen */}
+                <div className="flex-shrink-0 w-full px-4 pt-4">
+                  <div className="w-full h-40 overflow-hidden rounded-lg">
+                    <img
+                      src={img}
+                      alt={titulo || "Proyecto"}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
+                </div>
+
+                {/* Contenido */}
+                <div className="p-4 flex flex-col flex-1">
+                  <h2
+                    className={`${titleFont.className} text-lg font-semibold text-white mb-2`}
+                  >
+                    {titulo}
+                  </h2>
+
+                  {lugar ? (
+                    <span
+                      className={`${bodyFont.className} text-sm mb-4`}
+                      style={{ color: placeColor }}
+                    >
+                      {lugar}
+                    </span>
+                  ) : null}
+
+                  <div
+                    className={`${bodyFont.className} text-white text-sm flex-1`}
+                  >
+                    {descLines.length > 1 ? (
+                      <ul className="list-disc pl-5 space-y-1">
+                        {descLines.map((l, i) => (
+                          <li key={i}>{l}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p>{descLines[0] ?? "—"}</p>
+                    )}
+                  </div>
+
+                  {/* Herramientas al pie */}
+                  {(herramientas?.length ?? 0) > 0 ? (
+                    <div className="mt-4">
+                      <h3
+                        className={`${bodyFont.className} text-sm font-semibold text-white mb-2`}
+                      >
+                        {t("portfolioAccessibility.herramientas")}
+                      </h3>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {herramientas.map((tool, i) => (
+                          <span
+                            key={`${tool}-${i}`}
+                            className={`${bodyFont.className} bg-gray-700/55 text-white text-xs px-2 py-1 rounded`}
+                          >
+                            {tool}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
+
                   <div className="flex items-center space-x-4 mb-4">
                     <a
-                      href={item.link}
-                      className={`${bodyFont.className} text-sm text-[#6665F1] hover:underline hover:text-[#e254e9]`}
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`${bodyFont.className} text-sm`}
+                      style={{ color: placeColor }}
                     >
-                      Proyecto
+                      {t("portfolioAccessibility.proyect")}
                     </a>
                   </div>
                 </div>
-              </div>
-            </BackgroundGradient>
-          ))}
+              </BackgroundGradient>
+            );
+          })}
         </div>
       </section>
     </AnimatedSection>

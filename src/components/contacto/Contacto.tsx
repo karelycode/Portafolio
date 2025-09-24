@@ -1,25 +1,28 @@
+"use client";
+
 import React from "react";
 import { IoLogoLinkedin, IoLogoGithub, IoMail } from "react-icons/io5";
 import AnimatedSection from "../common/AnimatedSection";
 import { Button } from "../ui/moving-border";
+import { useTranslation } from "react-i18next";
 import { bodyFont, titleFont } from "@/config/fonts";
 
 export const Contacto = () => {
+  const { t } = useTranslation();
+
   return (
     <AnimatedSection>
       <section id="contacto" className=" w-full py-12 mb-15">
-        <div className="flex flex-col items-center justify-center w-full px-4 py-12 md:py-0">
+        <div className="flex flex-col items-center justify-center w-full px-4 mb-5 py-14 md:py-0">
           <h1
             className={`${titleFont.className} text-5xl sm:text-6xl md:text-6xl font-bold gradient-text mb-8 text-center`}
           >
-            ¿Trabajamos juntos?
+            {t("contactInfo.title")}
           </h1>
           <p
             className={`${bodyFont.className} text-base sm:text-lg md:text-xl text-white mb-12 max-w-6xl text-center`}
           >
-            Si estás interesado en colaborar conmigo o tienes alguna pregunta,
-            no dudes en contactarme. Estoy abierta a nuevas oportunidades y
-            emocionada por la posibilidad de trabajar juntos.
+            {t("contactInfo.description")}
           </p>
           <Button
             as="a"
@@ -27,7 +30,7 @@ export const Contacto = () => {
             download
             className={`${titleFont.className}`}
           >
-            Descargar CV
+            {t("navbarAccessibility.cv")}
           </Button>
           <div className="flex gap-6 my-8">
             <a

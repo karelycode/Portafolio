@@ -20,7 +20,9 @@
     "contactHeader": "Contacto"
   },
   "portfolioAccessibility": {
-    "navigateTo": "Navegar a"
+    "navigateTo": "Navegar a",
+    "proyect": "ver proyecto",
+    "herramientas": "Herramientas"
   },
 
   "title": {
@@ -162,7 +164,7 @@
         {
           "date": "2024",
           "title": "Project Manager y Desarrolladora ",
-          "place": "Clsarify",
+          "place": "Clarify",
           "description": "Premiada en ‘Innovatec 2024’, esta app en Flutter empodera a personas con discapacidad visual mediante un asistente de IA que ‘ve’ por ellos. Mi rol: diseñar una experiencia intuitiva con voz clara, vibraciones orientativas y colores de alto contraste, además de liderar el equipo técnico y convencer al jurado con una narrativa humana sobre inclusión."
         }
       ]

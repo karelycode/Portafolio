@@ -20,7 +20,9 @@
     "contactHeader": "Contact"
   },
   "portfolioAccessibility": {
-    "navigateTo": "Navigate to"
+    "navigateTo": "Navigate to",
+    "proyect": "View project",
+    "herramientas": "Tools"
   },
 
   "title": {
@@ -162,7 +164,7 @@
         {
           "date": "2024",
           "title": "Project Manager and Developer",
-          "place": "Clsarify",
+          "place": "Clarify",
           "description": "Awarded at 'Innovatec 2024'. This Flutter app empowers visually impaired people through an AI assistant that 'sees' for them. My role: design an intuitive experience with clear voice, orienting vibrations, and high-contrast colors, while leading the technical team and delivering a human-centered narrative on inclusion to the jury."
         }
       ]
