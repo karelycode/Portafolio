@@ -1,0 +1,206 @@
+{
+  "languageButtonAccessibility": {
+    "changeTo": "Cambiar a "
+  },
+  "navbarAccessibility": {
+    "navigation": "Navegación principal",
+    "mobileNavigation": "Navegación móvil",
+    "closeMenu": "Cerrar menú",
+    "openMenu": "Abrir menú",
+    "goToTop": "Ir al inicio",
+    "goTo": "Ir a",
+    "about": "Acerca de",
+    "cv": "Descargar CV",
+    "projects": "Ver proyectos",
+    "language": "Cambiar idioma a"
+  },
+  "aboutAccessibility": {
+    "expertiseHeader": "Acerca",
+    "projectsHeader": "Proyectos",
+    "contactHeader": "Contacto"
+  },
+  "portfolioAccessibility": {
+    "navigateTo": "Navegar a"
+  },
+
+  "title": {
+    "template": "%s | Karely Durán",
+    "default": "Karely Durán"
+  },
+  "description": "Entusiasta de la tecnología comprometida con el crecimiento. Hábil en desarrollo front-end, liderazgo de proyectos y metodologías ágiles. Excelente en la resolución de problemas con comunicación clara y rápida adaptabilidad.",
+  "applicationName": "Portafolio | Karely Durán",
+  "authors": [{ "name": "Karely Durán" }, { "name": "KarelyD" }],
+
+  "titles": {
+    "acercaTitle": "Acerca de mí",
+    "expertiseTitle": "Experiencia",
+    "skillsTitle": "Habilidades",
+    "portfolioTitle": "Portafolio",
+    "educationTitle": "Educación"
+  },
+
+  "menu": {
+    "acerca": "Acerca",
+    "portafolio": "Portafolio",
+    "contacto": "Contacto"
+  },
+
+  "cvLink": "https://res.cloudinary.com/dmlpgks2h/image/upload/fl_attachment/v1724263943/Portfolio/cv-es-marco-rodriguez.pdf",
+
+  "headerInfo": {
+    "headerTitle": "Hola, soy Karely Durán",
+    "headerProfession": "Ingeniera en Sistemas Computacionales",
+    "description": "Ingeniera en Sistemas Computacionales. Entusiasta de la tecnología comprometida con el crecimiento. Hábil en desarrollo front-end, liderazgo de proyectos y metodologías ágiles. Excelente en la resolución de problemas complejos y la innovación tecnológica."
+  },
+
+  "bioInfo": {
+    "description": "Soy ingeniera en sistemas computacionales especializada en transformación digital y experiencia de usuario. Combino habilidades técnicas con enfoque UX/UI para diseñar soluciones centradas en el usuario que optimizan procesos y mejoran la interacción digital. Apasionada por la innovación tecnológica y la aplicación de IA en experiencias digitales.",
+    "ubicacion": "Durango, Dgo. México",
+    "disponibilidad": "Disponibilidad de reubicación",
+    "especialidad": "Especialidad en Transformación digital en las organizaciones y diseño UX/UI"
+  },
+
+  "bioTitles": {
+    "ubicacionTitle": "Ubicación",
+    "fromTitle": "De",
+    "live_inTitle": "Vivo en",
+    "especialidadTitle": "Especialización"
+  },
+
+  "habilidadesTabs": [
+    {
+      "title": "Diseño UX/UI",
+      "iconColor": "#6a5af9",
+      "icon": "IoBrushOutline",
+      "skillsTitle": "Habilidades:",
+      "skills": "Diseño centrado en el usuario\n- Diseño de interfaces responsivas\n- Prototipado y wireframing\n- Arquitectura\n- Pruebas de usabilidad\n- Diseño de experiencias digitales",
+      "toolsTitle": "Herramientas:",
+      "toolsIcons": "https://skillicons.dev/icons?i=figma,ai&perline=14"
+    },
+    {
+      "title": "Desarrollo",
+      "iconColor": "#F5278C",
+      "icon": "IoCodeSlash",
+      "skillsTitle": "Habilidades:",
+      "skills": "Buenas practicas de desarrollo\n- Optimización y debugging\n- Consumo de APIs\n- Desarrollo frontend y backend\n- Desarrollo de aplicaciones web y móviles\n- Control de versiones con Git",
+      "toolsTitle": "Herramientas:",
+      "toolsIcons": "https://skillicons.dev/icons?i=java,py,flutter,dart,androidstudio,html,css,js,ts,bootstrap,tailwind,nextjs,vite,react,vercel,unity,git,github&perline=11"
+    },
+    {
+      "title": "Cloud y DevOps",
+      "iconColor": "#B514C6",
+      "icon": "IoServerOutline",
+      "skillsTitle": "Habilidades:",
+      "skills": "Modelado de bases de datos\n- Administración de DB SQL y NoSQL\n- Consultas y optimización de bases de datos\n- Visualización de datos\n- Automatización de reportes\n- Implementación de soluciones en la nube",
+      "toolsTitle": "Herramientas:",
+      "toolsIcons": "https://skillicons.dev/icons?i=mysql,postgresql,supabase,firebase,docker&perline=14"
+    },
+    {
+      "title": "Gestión de Proyectos",
+      "iconColor": "#b95af9",
+      "icon": "IoConstructOutline",
+      "skillsTitle": "Habilidades:",
+      "skills": "Metodologías ágiles\n- Gestión de tiempos, tareas y recursos\n- Liderazgo de equipos\n- Documentación funcional y técnica\n- Análisis de requerimientos\n- Planificación y seguimiento de proyectos",
+      "toolsTitle": "Herramientas:",
+      "toolsIcons": "https://skillicons.dev/icons?i=notion,gmail,gcp,&perline=14"
+    },
+    {
+      "title": "Blandas",
+      "iconColor": "#F5278C",
+      "icon": "IoPersonOutline",
+      "skillsTitle": "Habilidades:",
+      "skills": "Liderazgo\n- Trabajo en equipo\n- Comunicación efectiva\n- Creatividad\n- Adaptabilidad\n- Responsabilidad\n- Empatía\n- Resolución de problemas\n- Trabajo bajo presión\n"
+    }
+  ],
+
+  "timeline": {
+    "education": {
+      "title": "Educación",
+      "info": [
+        {
+          "date": "2020 - 2024",
+          "title": "Ingeniería en Sistemas Computacionales",
+          "place": "Instituto Tecnológico de Durango",
+          "description": "Egresada destacada de la carrera, adquiriendo diversas habilidades en desarrollo y gestión de sistemas tecnológicos, liderazgo de equipos de trabajo y organización de eventos."
+        },
+        {
+          "date": "2017 - 2020",
+          "title": "Técnico en Ofimática y Computación",
+          "place": "CBTis 110",
+          "description": "En mi formación como técnica en ofimática logre obtener conocimientos en:\n- Gestión de paquete office\n- Gestión y administración de redes\n- Gestión y administración de archivos\n"
+        },
+        {
+          "date": "2014 - 2017",
+          "title": "Educación Secundaria",
+          "place": "EST N° 67",
+          "description": "Durante mi educación secundaria tuve la oportunidad de llevar como especialidad el taller de róbotica, en el cuál adquirí conocimientos como el trabajo en equipo y bajo presión, diseño y programación de robots."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experiencia",
+      "info": [
+        {
+          "date": "Presente",
+          "title": "Community manager y UX/UI Specialist",
+          "place": "Fortune Acoustics",
+          "description": "En Fortune Acoustics, mi trabajo es hacer que la experiencia digital sea más amable y efectiva para las personas. Actualmente estoy renovando nuestra tienda online para que la interfaz de usuario sea más intuitiva y atractiva. También estoy creando constantemente landing pages para mejorar la conversión. Al igual, me encargo de la gestión de redes sociales, creando contenido atractivo y relevante para nuestra audiencia, lo que nos ayuda a aumentar nuestro alcance y engagement."
+        },
+        {
+          "date": "2024",
+          "title": "Project Manager y Desarrolladora ",
+          "place": "Clsarify",
+          "description": "Premiada en ‘Innovatec 2024’, esta app en Flutter empodera a personas con discapacidad visual mediante un asistente de IA que ‘ve’ por ellos. Mi rol: diseñar una experiencia intuitiva con voz clara, vibraciones orientativas y colores de alto contraste, además de liderar el equipo técnico y convencer al jurado con una narrativa humana sobre inclusión."
+        }
+      ]
+    }
+  },
+
+  "proyectos": [
+    {
+      "titulo": "Rediseño e-comerce",
+      "lugar": "Fortune Acoustics",
+      "img": "/ecomerce.png",
+      "descripcion": "Rediseño de UX/UI del e-comerce de Fortune Acoustics para mejorar la experiencia de los usuarios y alentarlos a generar compras. El objetivo es crear una interfaz más atráctiva y moderna, para actualizar la imagen de la marca y facilitar la navegación de los usuarios.",
+      "link": "https://www.fortuneacoustics.com/",
+      "herramientas": ["Figma", "WordPress"]
+    },
+    {
+      "titulo": "Landing page promociones",
+      "lugar": "Fortune Acoustics",
+      "img": "/Landing promociones.png",
+      "descripcion": "Diseño y desarrollo de una landing page especial para promociones de Fortune Acoustics, la cuál tiene como objetivo ser un apoyo del e-comerce. La landing page está diseñada para ser atractiva y fácil de navegar, permitiendo a los usuarios encontrar rápidamente las promociones.",
+      "link": "https://curso-delikeacliente.vercel.app",
+      "herramientas": ["Figma", "Next.js", "Tailwind CSS"]
+    },
+    {
+      "titulo": "Landing page cursos",
+      "lugar": "Fortune Acoustics, Nettcontrol",
+      "img": "/Landing curso.png",
+      "descripcion": "Diseño y desarrollo de una landing page de cursos especiales impartidos por Fortune Acoustics y Nettcontrol. La interfaz está diseñada con un aire moderno y profesional, con un enfoque en la usabilidad y la claridad de la información.",
+      "link": "https://curso-delikeacliente.vercel.app",
+      "herramientas": ["Figma", "Next.js", "Tailwind CSS", "Zoho"]
+    },
+    {
+      "titulo": "Clarify",
+      "lugar": "Innovatec 2024",
+      "img": "/logo-clarify.jpeg",
+      "descripcion": "Diseño, desarrollo y gestión de un proyecto de app móvil para personas con discapacidad visual, la cual implementa un asistente de IA que ayuda a los usuarios a navegar su entorno. Ganadores del primer lugar de Innovatec 2024 a nivel local, tercer lugar a nivel regional y mención honorífica por participación destacada a nivel nacional. Si quieres ver el proyecto, puedes visitar la landing page creada por MarcoTheBigCreator.",
+      "link": "https://clarify-page.vercel.app/es",
+      "herramientas": ["Figma", "Flutter", "PyTorch", "Firebase"]
+    },
+    {
+      "titulo": "BudgetBuddy",
+      "lugar": "HackDgo",
+      "img": "/budget.png",
+      "descripcion": "Diseño y desarrollo de una aplicación web para ayudar a los usuarios a gestionar su presupuesto de manera eficiente a través de análisis interpretados con IA. Ganadora del tercer lugar en HackDgo 2024.",
+      "link": "https://www.figma.com/design/yNyVfRUHeYPqzdoj1iMx4O/CLARIFY?node-id=371-2&t=Nl9zEc3richVnWt6-1",
+      "herramientas": ["Figma", "HTML", "CSS", "API de OpenAI"]
+    }
+  ],
+
+  "contactInfo": {
+    "title": "¿Trabajamos juntos?",
+    "description": "Si estás interesado en colaborar conmigo o tienes alguna pregunta, no dudes en contactarme. Estoy abierta a nuevas oportunidades y emocionada por la posibilidad de trabajar juntos."
+  }
+}

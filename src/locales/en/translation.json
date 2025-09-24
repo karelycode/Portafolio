@@ -1,0 +1,206 @@
+{
+  "languageButtonAccessibility": {
+    "changeTo": "Change to "
+  },
+  "navbarAccessibility": {
+    "navigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "goToTop": "Go to top",
+    "goTo": "Go to",
+    "about": "About",
+    "cv": "Download CV",
+    "projects": "All projects",
+    "language": "Change language to"
+  },
+  "aboutAccessibility": {
+    "expertiseHeader": "About",
+    "projectsHeader": "Projects",
+    "contactHeader": "Contact"
+  },
+  "portfolioAccessibility": {
+    "navigateTo": "Navigate to"
+  },
+
+  "title": {
+    "template": "%s | Karely Durán",
+    "default": "Karely Durán"
+  },
+  "description": "Technology enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. Excellent at problem-solving with clear communication and quick adaptability.",
+  "applicationName": "Portfolio | Karely Durán",
+  "authors": [{ "name": "Karely Durán" }, { "name": "KarelyD" }],
+
+  "titles": {
+    "acercaTitle": "About me",
+    "expertiseTitle": "Experience",
+    "skillsTitle": "Skills",
+    "portfolioTitle": "Portfolio",
+    "educationTitle": "Education"
+  },
+
+  "menu": {
+    "acerca": "About",
+    "portafolio": "Portfolio",
+    "contacto": "Contact"
+  },
+
+  "cvLink": "https://res.cloudinary.com/dmlpgks2h/image/upload/fl_attachment/v1724263943/Portfolio/cv-es-marco-rodriguez.pdf",
+
+  "headerInfo": {
+    "headerTitle": "Hi, I'm Karely Durán",
+    "headerProfession": "Computer Systems Engineer",
+    "description": "Computer Systems Engineer. Technology enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. Excellent at solving complex problems and driving technological innovation."
+  },
+
+  "bioInfo": {
+    "description": "I am a computer systems engineer specialized in digital transformation and user experience. I combine technical skills with a UX/UI approach to design user-centered solutions that optimize processes and improve digital interaction. Passionate about technological innovation and the application of AI in digital experiences.",
+    "ubicacion": "Durango, Dgo. Mexico",
+    "disponibilidad": "Willing to relocate",
+    "especialidad": "Specialized in Digital Transformation in organizations and UX/UI design"
+  },
+
+  "bioTitles": {
+    "ubicacionTitle": "Location",
+    "fromTitle": "From",
+    "live_inTitle": "Living in",
+    "especialidadTitle": "Specialization"
+  },
+
+  "habilidadesTabs": [
+    {
+      "title": "UX/UI Design",
+      "iconColor": "#6a5af9",
+      "icon": "IoBrushOutline",
+      "skillsTitle": "Skills:",
+      "skills": "User-centered design\n- Responsive interface design\n- Prototyping and wireframing\n- Architecture\n- Usability testing\n- Digital experience design",
+      "toolsTitle": "Tools:",
+      "toolsIcons": "https://skillicons.dev/icons?i=figma,ai&perline=14"
+    },
+    {
+      "title": "Development",
+      "iconColor": "#F5278C",
+      "icon": "IoCodeSlash",
+      "skillsTitle": "Skills:",
+      "skills": "Development best practices\n- Optimization and debugging\n- API consumption\n- Frontend and backend development\n- Web and mobile application development\n- Version control with Git",
+      "toolsTitle": "Tools:",
+      "toolsIcons": "https://skillicons.dev/icons?i=java,py,flutter,dart,androidstudio,html,css,js,ts,bootstrap,tailwind,nextjs,vite,react,vercel,unity,git,github&perline=11"
+    },
+    {
+      "title": "Cloud and DevOps",
+      "iconColor": "#B514C6",
+      "icon": "IoServerOutline",
+      "skillsTitle": "Skills:",
+      "skills": "Database modeling\n- SQL and NoSQL DB administration\n- Database queries and optimization\n- Data visualization\n- Report automation\n- Cloud solutions implementation",
+      "toolsTitle": "Tools:",
+      "toolsIcons": "https://skillicons.dev/icons?i=mysql,postgresql,supabase,firebase,docker&perline=14"
+    },
+    {
+      "title": "Project Management",
+      "iconColor": "#b95af9",
+      "icon": "IoConstructOutline",
+      "skillsTitle": "Skills:",
+      "skills": "Agile methodologies\n- Time, task, and resource management\n- Team leadership\n- Functional and technical documentation\n- Requirements analysis\n- Project planning and tracking",
+      "toolsTitle": "Tools:",
+      "toolsIcons": "https://skillicons.dev/icons?i=notion,gmail,gcp,&perline=14"
+    },
+    {
+      "title": "Soft Skills",
+      "iconColor": "#F5278C",
+      "icon": "IoPersonOutline",
+      "skillsTitle": "Skills:",
+      "skills": "Leadership\n- Teamwork\n- Effective communication\n- Creativity\n- Adaptability\n- Responsibility\n- Empathy\n- Problem solving\n- Working under pressure\n"
+    }
+  ],
+
+  "timeline": {
+    "education": {
+      "title": "Education",
+      "info": [
+        {
+          "date": "2020 - 2024",
+          "title": "Computer Systems Engineering",
+          "place": "Instituto Tecnológico de Durango",
+          "description": "Outstanding graduate, gaining skills in development and management of technological systems, team leadership, and event organization."
+        },
+        {
+          "date": "2017 - 2020",
+          "title": "Technician in Office Automation and Computing",
+          "place": "CBTis 110",
+          "description": "During my training, I acquired knowledge in:\n- Office suite management\n- Network management and administration\n- File management and administration\n"
+        },
+        {
+          "date": "2014 - 2017",
+          "title": "Secondary Education",
+          "place": "EST N° 67",
+          "description": "In secondary school, I specialized in robotics, where I learned teamwork under pressure, design, and robot programming."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "info": [
+        {
+          "date": "Present",
+          "title": "Community Manager and UX/UI Specialist",
+          "place": "Fortune Acoustics",
+          "description": "At Fortune Acoustics, my job is to make the digital experience friendlier and more effective for people. I am currently redesigning our online store for a more intuitive and attractive user interface. I also create landing pages to improve conversion. Additionally, I manage social media, creating engaging content that helps us increase reach and engagement."
+        },
+        {
+          "date": "2024",
+          "title": "Project Manager and Developer",
+          "place": "Clsarify",
+          "description": "Awarded at 'Innovatec 2024'. This Flutter app empowers visually impaired people through an AI assistant that 'sees' for them. My role: design an intuitive experience with clear voice, orienting vibrations, and high-contrast colors, while leading the technical team and delivering a human-centered narrative on inclusion to the jury."
+        }
+      ]
+    }
+  },
+
+  "proyectos": [
+    {
+      "titulo": "E-commerce Redesign",
+      "lugar": "Fortune Acoustics",
+      "img": "/ecomerce.png",
+      "descripcion": "UX/UI redesign of Fortune Acoustics' e-commerce to improve user experience and encourage purchases. The goal was to create a more modern and attractive interface to refresh the brand image and make navigation easier.",
+      "link": "https://www.fortuneacoustics.com/",
+      "herramientas": ["Figma", "WordPress"]
+    },
+    {
+      "titulo": "Promotions Landing Page",
+      "lugar": "Fortune Acoustics",
+      "img": "/Landing promociones.png",
+      "descripcion": "Design and development of a special landing page for promotions at Fortune Acoustics, intended as a support to the e-commerce. The page was designed to be attractive and easy to navigate, helping users quickly find promotions.",
+      "link": "https://curso-delikeacliente.vercel.app",
+      "herramientas": ["Figma", "Next.js", "Tailwind CSS"]
+    },
+    {
+      "titulo": "Courses Landing Page",
+      "lugar": "Fortune Acoustics, Nettcontrol",
+      "img": "/Landing curso.png",
+      "descripcion": "Design and development of a landing page for special courses by Fortune Acoustics and Nettcontrol. The interface was built with a modern and professional style, focusing on usability and clarity of information.",
+      "link": "https://curso-delikeacliente.vercel.app",
+      "herramientas": ["Figma", "Next.js", "Tailwind CSS", "Zoho"]
+    },
+    {
+      "titulo": "Clarify",
+      "lugar": "Innovatec 2024",
+      "img": "/logo-clarify.jpeg",
+      "descripcion": "Design, development, and management of a mobile app project for visually impaired people, implementing an AI assistant that helps users navigate their environment. Winners of first place at Innovatec 2024 locally, third place regionally, and an honorable mention nationally. Visit the landing page created by MarcoTheBigCreator.",
+      "link": "https://clarify-page.vercel.app/es",
+      "herramientas": ["Figma", "Flutter", "PyTorch", "Firebase"]
+    },
+    {
+      "titulo": "BudgetBuddy",
+      "lugar": "HackDgo",
+      "img": "/budget.png",
+      "descripcion": "Design and development of a web app to help users manage their budget efficiently through AI-powered analysis. Winner of third place at HackDgo 2024.",
+      "link": "https://www.figma.com/design/yNyVfRUHeYPqzdoj1iMx4O/CLARIFY?node-id=371-2&t=Nl9zEc3richVnWt6-1",
+      "herramientas": ["Figma", "HTML", "CSS", "OpenAI API"]
+    }
+  ],
+
+  "contactInfo": {
+    "title": "Shall we work together?",
+    "description": "If you’re interested in collaborating with me or have any questions, don’t hesitate to reach out. I’m open to new opportunities and excited about the possibility of working together."
+  }
+}

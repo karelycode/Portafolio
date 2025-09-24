@@ -5,9 +5,11 @@ import React from "react";
 import { Button } from "../ui/moving-border";
 import { SparklesCore } from "../ui/sparkles";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { bodyFont, titleFont } from "@/config/fonts";
 
 export const Banner = () => {
+  const { t } = useTranslation();
   return (
     <motion.section
       id="banner"
@@ -31,20 +33,17 @@ export const Banner = () => {
         <h1
           className={`${titleFont.className} text-6xl sm:text-7xl md:text-8xl font-bold gradient-text mb-4 text-center`}
         >
-          Hola, soy Karely Durán
+          {t("headerInfo.headerTitle")}
         </h1>
         <h2
           className={`${titleFont.className} text-base sm:text-2xl md:text-3xl font-bold text-white mb-4 text-center`}
         >
-          Ingeniera en Sistemas Computacionales
+          {t("headerInfo.headerProfession")}
         </h2>
         <p
           className={`${bodyFont.className} text-base sm:text-lg md:text-xl text-white mb-8 max-w-6xl text-center`}
         >
-          Entusiasta de la tecnología comprometida con el crecimiento. Hábil en
-          desarrollo front-end, liderazgo de proyectos y metodologías ágiles.
-          Excelente en la resolución de problemas complejos y la innovación
-          tecnológica.
+          {t("headerInfo.description")}
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-4 w-full max-w-lg">
           <Link
@@ -57,10 +56,14 @@ export const Banner = () => {
               }
             }}
           >
-            <Button className={`${bodyFont.className}`}>Ver Proyectos</Button>
+            <Button className={`${bodyFont.className}`}>
+              {t("navbarAccessibility.projects")}
+            </Button>
           </Link>
           <Button as="a" href="/cv-Karely Duran.pdf" download>
-            <span className={`${bodyFont.className}`}>Descargar CV</span>
+            <span className={`${bodyFont.className}`}>
+              {t("navbarAccessibility.cv")}
+            </span>
           </Button>
         </div>
       </div>

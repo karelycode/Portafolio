@@ -3,20 +3,23 @@
 import Link from "next/link";
 import { titleFont } from "@/config/fonts";
 import { useState } from "react";
-
 import { FiMenu } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
+import "@/i18n";
 
 export const TopMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
   const menuItems = [
-    { label: "Acerca", href: "#acerca" },
-    { label: "Portafolio", href: "#proyectos" },
-    { label: "Contacto", href: "#contacto" },
+    { label: t("menu.acerca"), href: "#acerca" },
+    { label: t("menu.portafolio"), href: "#proyectos" },
+    { label: t("menu.contacto"), href: "#contacto" },
   ];
 
   return (
-    <nav className=" fixed top-0 left-0 w-full z-50 flex px-5 lg:px-12 justify-between items-center h-16 bg-[#13132A]/50 backdrop-blur-sm shadow-sm">
-      {/* Logo Section (visible en todas las resoluciones) */}
+    <nav className="fixed top-0 left-0 w-full z-50 flex px-5 lg:px-12 justify-between items-center h-16 bg-[#13132A]/50 backdrop-blur-sm shadow-sm">
+      {/* Logo Section */}
       <div className="flex-1 flex justify-start items-center gap-2">
         <Link
           href="/"
@@ -26,7 +29,7 @@ export const TopMenu = () => {
             const el = document.querySelector("#banner");
             if (el) {
               el.scrollIntoView({ behavior: "smooth" });
-              setMenuOpen(false); // Cierra el menú en móvil
+              setMenuOpen(false);
             }
           }}
         >
@@ -59,21 +62,40 @@ export const TopMenu = () => {
               const el = document.querySelector(item.href);
               if (el) {
                 el.scrollIntoView({ behavior: "smooth" });
-                setMenuOpen(false); // Cierra el menú en móvil
+                setMenuOpen(false);
               }
             }}
           >
             {item.label}
             <span
               className="absolute inset-x-0 mx-auto -bottom-px h-px w-1/2
-+         bg-gradient-to-r from-transparent via-[#9e4ae5] to-transparent
-+         scale-x-0 group-hover:scale-x-100
-+         transform origin-center
-+         transition-transform duration-300"
+         bg-gradient-to-r from-transparent via-[#9e4ae5] to-transparent
+         scale-x-0 group-hover:scale-x-100
+         transform origin-center
+         transition-transform duration-300"
             />
           </Link>
         ))}
       </div>
+      {/* Language Switch Button */}
+      <button
+        onClick={() =>
+          i18n.changeLanguage(i18n.language === "es" ? "en" : "es")
+        }
+        className={`${titleFont.className} relative px-2 py-1 text-[15px] font-normal text-white hover:bg-[#18162a] rounded-xl transition-colors group`}
+        aria-label={
+          i18n.language === "es" ? "Cambiar a inglés" : "Switch to Spanish"
+        }
+      >
+        {i18n.language === "es" ? "EN" : "ES"}
+        <span
+          className="absolute inset-x-0 mx-auto -bottom-px h-px w-1/2
+         bg-gradient-to-r from-transparent via-[#9e4ae5] to-transparent
+         scale-x-0 group-hover:scale-x-100
+         transform origin-center
+         transition-transform duration-300"
+        />
+      </button>
 
       {/* Navigation Links Mobile */}
       {menuOpen && (
@@ -88,7 +110,7 @@ export const TopMenu = () => {
                 const el = document.querySelector(item.href);
                 if (el) {
                   el.scrollIntoView({ behavior: "smooth" });
-                  setMenuOpen(false); // Cierra el menú en móvil
+                  setMenuOpen(false);
                 }
               }}
             >
