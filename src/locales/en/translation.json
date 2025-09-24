@@ -70,42 +70,55 @@
   "habilidadesTabs": [
     {
       "title": "UX/UI Design",
+      "value": "frontend",
       "iconColor": "#6a5af9",
       "icon": "IoBrushOutline",
       "skillsTitle": "Skills:",
       "skills": "User-centered design\n- Responsive interface design\n- Prototyping and wireframing\n- Architecture\n- Usability testing\n- Digital experience design",
       "toolsTitle": "Tools:",
-      "toolsIcons": "https://skillicons.dev/icons?i=figma,ai&perline=14"
+      "toolsIcons": "https://skillicons.dev/icons?i=figma,ai&perline=14",
+      "width": "85px",
+      "height": "700px"
     },
     {
       "title": "Development",
+      "value": "desarrollo",
       "iconColor": "#F5278C",
       "icon": "IoCodeSlash",
       "skillsTitle": "Skills:",
       "skills": "Development best practices\n- Optimization and debugging\n- API consumption\n- Frontend and backend development\n- Web and mobile application development\n- Version control with Git",
       "toolsTitle": "Tools:",
-      "toolsIcons": "https://skillicons.dev/icons?i=java,py,flutter,dart,androidstudio,html,css,js,ts,bootstrap,tailwind,nextjs,vite,react,vercel,unity,git,github&perline=11"
+      "toolsIcons": "https://skillicons.dev/icons?i=java,py,flutter,dart,androidstudio,html,css,js,ts,bootstrap,tailwind,nextjs,vite,react,vercel,unity,git,github&perline=11",
+      "width": "620px",
+      "height": "700px"
     },
     {
       "title": "Cloud and DevOps",
+      "value": "cloud",
       "iconColor": "#B514C6",
       "icon": "IoServerOutline",
       "skillsTitle": "Skills:",
       "skills": "Database modeling\n- SQL and NoSQL DB administration\n- Database queries and optimization\n- Data visualization\n- Report automation\n- Cloud solutions implementation",
       "toolsTitle": "Tools:",
-      "toolsIcons": "https://skillicons.dev/icons?i=mysql,postgresql,supabase,firebase,docker&perline=14"
+      "toolsIcons": "https://skillicons.dev/icons?i=mysql,postgresql,supabase,firebase,docker&perline=14",
+      "width": "230px",
+      "height": "700px"
     },
     {
       "title": "Project Management",
+      "value": "projectManagement",
       "iconColor": "#b95af9",
       "icon": "IoConstructOutline",
       "skillsTitle": "Skills:",
       "skills": "Agile methodologies\n- Time, task, and resource management\n- Team leadership\n- Functional and technical documentation\n- Requirements analysis\n- Project planning and tracking",
       "toolsTitle": "Tools:",
-      "toolsIcons": "https://skillicons.dev/icons?i=notion,gmail,gcp,&perline=14"
+      "toolsIcons": "https://skillicons.dev/icons?i=notion,gmail,gcp,&perline=14",
+      "width": "180px",
+      "height": "700px"
     },
     {
       "title": "Soft Skills",
+      "value": "softSkills",
       "iconColor": "#F5278C",
       "icon": "IoPersonOutline",
       "skillsTitle": "Skills:",
@@ -125,7 +138,7 @@
         },
         {
           "date": "2017 - 2020",
-          "title": "Technician in Office Automation and Computing",
+          "title": "Technician in Office",
           "place": "CBTis 110",
           "description": "During my training, I acquired knowledge in:\n- Office suite management\n- Network management and administration\n- File management and administration\n"
         },

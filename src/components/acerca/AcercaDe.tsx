@@ -8,10 +8,6 @@ import { bodyFont, titleFont } from "@/config/fonts";
 
 export const AcercaDe = () => {
   const { t } = useTranslation();
-  const iconMap = {
-    map: <IoMapOutline className="text-3xl text-[#6a5af9] mr-3" />,
-    code: <IoCodeOutline className="text-3xl text-[#e254e9] mr-3" />,
-  };
   return (
     <AnimatedSection>
       <section id="acerca" className=" w-full py-40 mb-15">

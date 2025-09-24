@@ -70,42 +70,55 @@
   "habilidadesTabs": [
     {
       "title": "Diseño UX/UI",
+      "value": "frontend",
       "iconColor": "#6a5af9",
       "icon": "IoBrushOutline",
       "skillsTitle": "Habilidades:",
       "skills": "Diseño centrado en el usuario\n- Diseño de interfaces responsivas\n- Prototipado y wireframing\n- Arquitectura\n- Pruebas de usabilidad\n- Diseño de experiencias digitales",
       "toolsTitle": "Herramientas:",
-      "toolsIcons": "https://skillicons.dev/icons?i=figma,ai&perline=14"
+      "toolsIcons": "https://skillicons.dev/icons?i=figma,ai&perline=14",
+      "width": "85px",
+      "height": "700px"
     },
     {
       "title": "Desarrollo",
+      "value": "desarrollo",
       "iconColor": "#F5278C",
       "icon": "IoCodeSlash",
       "skillsTitle": "Habilidades:",
       "skills": "Buenas practicas de desarrollo\n- Optimización y debugging\n- Consumo de APIs\n- Desarrollo frontend y backend\n- Desarrollo de aplicaciones web y móviles\n- Control de versiones con Git",
       "toolsTitle": "Herramientas:",
-      "toolsIcons": "https://skillicons.dev/icons?i=java,py,flutter,dart,androidstudio,html,css,js,ts,bootstrap,tailwind,nextjs,vite,react,vercel,unity,git,github&perline=11"
+      "toolsIcons": "https://skillicons.dev/icons?i=java,py,flutter,dart,androidstudio,html,css,js,ts,bootstrap,tailwind,nextjs,vite,react,vercel,unity,git,github&perline=11",
+      "width": "620px",
+      "height": "700px"
     },
     {
       "title": "Cloud y DevOps",
+      "value": "cloud",
       "iconColor": "#B514C6",
       "icon": "IoServerOutline",
       "skillsTitle": "Habilidades:",
       "skills": "Modelado de bases de datos\n- Administración de DB SQL y NoSQL\n- Consultas y optimización de bases de datos\n- Visualización de datos\n- Automatización de reportes\n- Implementación de soluciones en la nube",
       "toolsTitle": "Herramientas:",
-      "toolsIcons": "https://skillicons.dev/icons?i=mysql,postgresql,supabase,firebase,docker&perline=14"
+      "toolsIcons": "https://skillicons.dev/icons?i=mysql,postgresql,supabase,firebase,docker&perline=14",
+      "width": "230px",
+      "height": "700px"
     },
     {
       "title": "Gestión de Proyectos",
+      "value": "projectManagement",
       "iconColor": "#b95af9",
       "icon": "IoConstructOutline",
       "skillsTitle": "Habilidades:",
       "skills": "Metodologías ágiles\n- Gestión de tiempos, tareas y recursos\n- Liderazgo de equipos\n- Documentación funcional y técnica\n- Análisis de requerimientos\n- Planificación y seguimiento de proyectos",
       "toolsTitle": "Herramientas:",
-      "toolsIcons": "https://skillicons.dev/icons?i=notion,gmail,gcp,&perline=14"
+      "toolsIcons": "https://skillicons.dev/icons?i=notion,gmail,gcp,&perline=14",
+      "width": "180px",
+      "height": "700px"
     },
     {
       "title": "Blandas",
+      "value": "softSkills",
       "iconColor": "#F5278C",
       "icon": "IoPersonOutline",
       "skillsTitle": "Habilidades:",
@@ -125,7 +138,7 @@
         },
         {
           "date": "2017 - 2020",
-          "title": "Técnico en Ofimática y Computación",
+          "title": "Técnico en Ofimática",
           "place": "CBTis 110",
           "description": "En mi formación como técnica en ofimática logre obtener conocimientos en:\n- Gestión de paquete office\n- Gestión y administración de redes\n- Gestión y administración de archivos\n"
         },

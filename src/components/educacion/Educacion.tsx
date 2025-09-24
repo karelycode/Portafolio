@@ -2,102 +2,110 @@
 import React from "react";
 import { BackgroundGradient } from "../ui/background-gradient";
 import AnimatedSection from "../common/AnimatedSection";
+import { useTranslation } from "react-i18next";
 import { bodyFont, titleFont } from "@/config/fonts";
 
-const info = [
-  {
-    titulo: "Educación secundaria",
-    escuela: <span className="text-[#6a5af9] ">E.S.T. N°67</span>,
-    period: (
-      <span className="bg-[#6a5af9] rounded-2xl p-3 mr-3 flex items-center justify-center">
-        2014-2017
-      </span>
-    ),
-    content: (
-      <div>
-        Durante mi educación secundaria tuve la oportunidad de llevar como
-        especialidad el taller de róbotica, en el cuál adquirí conocimientos
-        como el trabajo en equipo y bajo presión, diseño y programación de
-        robots.
-      </div>
-    ),
-  },
-  {
-    titulo: "Técnica en ofimática",
-    escuela: <span className="text-[#B514C6]">CBTis 110</span>,
-    period: (
-      <span className="bg-[#B514C6] rounded-2xl p-3 mr-3 flex items-center justify-center">
-        2017-2020
-      </span>
-    ),
-    content: (
-      <div>
-        <span>
-          En mi formación como técnica en ofimática logre obtener conocimientos
-          en:
-        </span>
-        <br />
-        -Gestión de paquete office
-        <br />
-        -Gestión y administración de redes
-        <br />
-        -Gestión y administración de archivos
-      </div>
-    ),
-  },
-  {
-    titulo: "Ingeniería en sistemas computacionales",
-    escuela: (
-      <span className="text-[#F5278C]">Instituto Tecnológico de Durango</span>
-    ),
-    period: (
-      <span className="bg-[#F5278C] rounded-2xl p-3 mr-3 flex items-center justify-center">
-        2020-2024
-      </span>
-    ),
-    content: (
-      <div>
-        Egresada destacada de la carrera, adquiriendo diversas habilidades en
-        desarrollo y gestión de sistemas tecnológicos, liderazgo de equipos de
-        trabajo y organización de eventos.
-      </div>
-    ),
-  },
-];
+// Paleta cíclica por tarjeta (puedes editarla o leerla del JSON después)
+const COLORS = ["#6a5af9", "#B514C6", "#F5278C", "#b95af9", "#18162a"];
+
+// Helpers
+const coerceLines = (val: unknown): string[] => {
+  if (Array.isArray(val)) return val.filter(Boolean);
+  if (typeof val === "string") {
+    return val
+      .split("\n")
+      .map((s) => s.replace(/^\s*-\s*/, "").trim())
+      .filter(Boolean);
+  }
+  return [];
+};
+
+type EduItem = {
+  date?: string; // 2014-2017
+  title?: string; // Educación secundaria
+  place?: string; // E.S.T. N°67
+  description?: string | string[];
+  color?: string; // opcional: si algún día lo agregas en el JSON
+};
 
 export const Educacion = () => {
+  const { t } = useTranslation();
+
+  // Estructura esperada desde tu JSON de traducciones:
+  // "timeline": { "education": { "title": "Educación", "info": [ { "date": "...", "title": "...", "place": "...", "description": "..." }, ... ] } }
+  const edu = t("timeline.education", { returnObjects: true }) as {
+    title?: string;
+    info?: EduItem[];
+  };
+
+  const items = Array.isArray(edu?.info) ? edu!.info! : [];
+
   return (
     <AnimatedSection>
-      <section className=" w-full py-12 mb-15">
+      <section className="w-full py-12 mb-15">
         <h1
           className={`${titleFont.className} text-4xl sm:text-5xl md:text-5xl font-bold gradient-text mb-10 text-center`}
         >
-          Educación
+          {edu?.title ?? "Educación"}
         </h1>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto items-stretch">
-          {info.map((item, idx) => (
-            <BackgroundGradient
-              key={idx}
-              className="bg-[#18162a] rounded-3xl p-4  w-full h-full flex flex-col"
-            >
-              <div className={`${bodyFont.className} flex items-center mb-2`}>
-                {item.period}
-              </div>
-              <div>
-                <h2
-                  className={`${titleFont.className} text-lg font-semibold text-white mb-2`}
-                >
-                  {item.titulo}
-                </h2>
-              </div>
-              <div className={`${bodyFont.className} flex items-center mb-2`}>
-                <span>{item.escuela}</span>
-              </div>
-              <div className={`${bodyFont.className} text-white text-sm`}>
-                {item.content}
-              </div>
-            </BackgroundGradient>
-          ))}
+          {items.map((item, idx) => {
+            const color = item.color ?? COLORS[idx % COLORS.length];
+            const lines = coerceLines(item.description);
+
+            return (
+              <BackgroundGradient
+                key={`${item.title}-${idx}`}
+                className="bg-[#18162a] rounded-3xl p-4 w-full h-full flex flex-col"
+              >
+                {/* Periodo */}
+                {item.date ? (
+                  <div
+                    className={`${bodyFont.className} flex items-center mb-2`}
+                  >
+                    <span
+                      className="rounded-2xl p-3 mr-3 flex items-center justify-center"
+                      style={{ backgroundColor: color }}
+                    >
+                      {item.date}
+                    </span>
+                  </div>
+                ) : null}
+
+                {/* Título */}
+                {item.title ? (
+                  <h2
+                    className={`${titleFont.className} text-lg font-semibold text-white mb-2`}
+                  >
+                    {item.title}
+                  </h2>
+                ) : null}
+
+                {/* Escuela / lugar */}
+                {item.place ? (
+                  <div
+                    className={`${bodyFont.className} flex items-center mb-2`}
+                  >
+                    <span style={{ color }}>{item.place}</span>
+                  </div>
+                ) : null}
+
+                {/* Descripción */}
+                <div className={`${bodyFont.className} text-white text-sm`}>
+                  {lines.length > 1 ? (
+                    <ul className="list-disc pl-5 space-y-1">
+                      {lines.map((l, i) => (
+                        <li key={i}>{l}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p>{lines[0] ?? "—"}</p>
+                  )}
+                </div>
+              </BackgroundGradient>
+            );
+          })}
         </div>
       </section>
     </AnimatedSection>
