@@ -185,7 +185,7 @@
       "lugar": "Fortune Acoustics",
       "img": "/Landing promociones.png",
       "descripcion": "Diseño y desarrollo de una landing page especial para promociones de Fortune Acoustics, la cuál tiene como objetivo ser un apoyo del e-comerce. La landing page está diseñada para ser atractiva y fácil de navegar, permitiendo a los usuarios encontrar rápidamente las promociones.",
-      "link": "https://curso-delikeacliente.vercel.app",
+      "link": "https://promociones-fortune.vercel.app",
       "herramientas": ["Figma", "Next.js", "Tailwind CSS"]
     },
     {
