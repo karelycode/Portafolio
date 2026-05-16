@@ -8,6 +8,8 @@ import { bodyFont, titleFont } from "@/config/fonts";
 
 export const AcercaDe = () => {
   const { t } = useTranslation();
+  const desc = String(t("bioInfo.description"));
+  const descParts = desc.split("\n");
   return (
     <AnimatedSection>
       <section id="acerca" className=" w-full py-40 mb-15">
@@ -20,7 +22,12 @@ export const AcercaDe = () => {
           <p
             className={`${bodyFont.className} text-base sm:text-lg md:text-xl text-white mb-12 max-w-6xl text-center`}
           >
-            {t("bioInfo.description")}
+            {descParts.map((line, i) => (
+              <span key={i}>
+                {line}
+                {i < descParts.length - 1 && <br />}
+              </span>
+            ))}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto items-stretch">
             <BackgroundGradient className="bg-[#18162a] rounded-3xl p-4 min-w-[220px] w-full sm:w-[320px] max-w-sm flex-1 min-h-[180px]">

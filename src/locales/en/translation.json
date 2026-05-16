@@ -51,12 +51,12 @@
 
   "headerInfo": {
     "headerTitle": "Hi, I'm Karely Durán",
-    "headerProfession": "Computer Systems Engineer",
-    "description": "Computer Systems Engineer. Technology enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. Excellent at solving complex problems and driving technological innovation."
+    "headerProfession": "UX/UI Designer & Frontend Developer",
+    "description": "I design interfaces that don't just look good — they work, convert, and leave an impression. I bridge the gap between design and code, taking products from wireframe all the way to production."
   },
 
   "bioInfo": {
-    "description": "I am a computer systems engineer specialized in digital transformation and user experience. I combine technical skills with a UX/UI approach to design user-centered solutions that optimize processes and improve digital interaction. Passionate about technological innovation and the application of AI in digital experiences.",
+    "description": "I'm a UX/UI Designer and Frontend Developer based in Durango, Mexico, focused on digital transformation and inclusive product design.\nMy approach is simple: I design for real people. That means researching, questioning assumptions, and making sure every design decision has a clear reason behind it — not just a pretty aesthetic.\nWhat sets me apart is that I can take a Figma design and build it myself with Next.js and Tailwind, removing friction between design and development.\n\nMost recently, I won first place at Innovatec 2024 with Clarify — an AI-powered app for people with visual impairments — a project that reinforced my belief that good design can genuinely change lives.",
     "ubicacion": "Durango, Dgo. Mexico",
     "disponibilidad": "Willing to relocate",
     "especialidad": "Specialized in Digital Transformation in organizations and UX/UI design"
@@ -156,7 +156,7 @@
       "title": "Experience",
       "info": [
         {
-          "date": "Present",
+          "date": "January 2025 - Present",
           "title": "Community Manager and UX/UI Specialist",
           "place": "Fortune Acoustics",
           "description": "At Fortune Acoustics, my job is to make the digital experience friendlier and more effective for people. I am currently redesigning our online store for a more intuitive and attractive user interface. I also create landing pages to improve conversion. Additionally, I manage social media, creating engaging content that helps us increase reach and engagement."
@@ -181,14 +181,6 @@
       "herramientas": ["Figma", "WordPress"]
     },
     {
-      "titulo": "Promotions Landing Page",
-      "lugar": "Fortune Acoustics",
-      "img": "/Landing promociones.png",
-      "descripcion": "Design and development of a special landing page for promotions at Fortune Acoustics, intended as a support to the e-commerce. The page was designed to be attractive and easy to navigate, helping users quickly find promotions.",
-      "link": "https://promociones-fortune.vercel.app",
-      "herramientas": ["Figma", "Next.js", "Tailwind CSS"]
-    },
-    {
       "titulo": "Courses Landing Page",
       "lugar": "Fortune Acoustics, Nettcontrol",
       "img": "/Landing curso.png",
@@ -200,7 +192,7 @@
       "titulo": "Clarify",
       "lugar": "Innovatec 2024",
       "img": "/logo-clarify.jpeg",
-      "descripcion": "Design, development, and management of a mobile app project for visually impaired people, implementing an AI assistant that helps users navigate their environment. Winners of first place at Innovatec 2024 locally, third place regionally, and an honorable mention nationally. Visit the landing page created by MarcoTheBigCreator.",
+      "descripcion": "I designed and led the development of Clarify, a mobile app that uses AI to act as 'eyes' for people with visual impairments. The design challenge was twofold: build a functional interface that doesn't rely on sight, and craft a human narrative that would resonate with the judges.\nEvery decision was intentional — clear voice feedback, directional vibrations, high-contrast colors. We won first place locally, third place regionally, and an honorable mention at the national level at Innovatec 2024.",
       "link": "https://clarify-page.vercel.app/es",
       "herramientas": ["Figma", "Flutter", "PyTorch", "Firebase"]
     },
@@ -208,7 +200,7 @@
       "titulo": "BudgetBuddy",
       "lugar": "HackDgo",
       "img": "/budget.png",
-      "descripcion": "Design and development of a web app to help users manage their budget efficiently through AI-powered analysis. Winner of third place at HackDgo 2024.",
+      "descripcion": "I designed and developed BudgetBuddy at HackDgo 2024: a web app that uses the OpenAI API to analyze spending and deliver personalized budget recommendations in plain language.\nThe challenge was making AI feel approachable — not technical — for users with no financial background. We placed third among all participating teams.",
       "link": "https://www.figma.com/design/yNyVfRUHeYPqzdoj1iMx4O/CLARIFY?node-id=371-2&t=Nl9zEc3richVnWt6-1",
       "herramientas": ["Figma", "HTML", "CSS", "OpenAI API"]
     }

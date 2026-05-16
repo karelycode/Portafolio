@@ -21,7 +21,7 @@
   },
   "portfolioAccessibility": {
     "navigateTo": "Navegar a",
-    "proyect": "ver proyecto",
+    "proyect": "Ver proyecto",
     "herramientas": "Herramientas"
   },
 
@@ -51,12 +51,12 @@
 
   "headerInfo": {
     "headerTitle": "Hola, soy Karely Durán",
-    "headerProfession": "Ingeniera en Sistemas Computacionales",
-    "description": "Ingeniera en Sistemas Computacionales. Entusiasta de la tecnología comprometida con el crecimiento. Hábil en desarrollo front-end, liderazgo de proyectos y metodologías ágiles. Excelente en la resolución de problemas complejos y la innovación tecnológica."
+    "headerProfession": "Diseñadora UX/UI y Desarrolladora Frontend",
+    "description": "Creo interfaces que no solo se ven bien — funcionan, convierten y dejan huella. Combino diseño centrado en el usuario con código real para llevar productos del wireframe a producción."
   },
 
   "bioInfo": {
-    "description": "Soy ingeniera en sistemas computacionales especializada en transformación digital y experiencia de usuario. Combino habilidades técnicas con enfoque UX/UI para diseñar soluciones centradas en el usuario que optimizan procesos y mejoran la interacción digital. Apasionada por la innovación tecnológica y la aplicación de IA en experiencias digitales.",
+    "description": "Soy diseñadora UX/UI y desarrolladora frontend con base en Durango, México, especializada en transformación digital y productos inclusivos.\nMi enfoque es simple: diseño para personas reales. Eso significa investigar, cuestionar supuestos y asegurarme de que cada decisión de diseño tenga una razón detrás — no solo una estética bonita.\nLo que me diferencia es que puedo tomar un diseño de Figma y llevarlo a producción yo misma con Next.js y Tailwind, lo cual elimina fricciones entre diseño y desarrollo.\nRecientemente gané el primer lugar en Innovatec 2024 con Clarify, una app de IA para personas con discapacidad visual — un proyecto que reafirmó mi creencia de que el buen diseño puede cambiar vidas.",
     "ubicacion": "Durango, Dgo. México",
     "disponibilidad": "Disponibilidad de reubicación",
     "especialidad": "Especialidad en Transformación digital en las organizaciones y diseño UX/UI"
@@ -156,7 +156,7 @@
       "title": "Experiencia",
       "info": [
         {
-          "date": "Presente",
+          "date": "Enero 2025 - Presente",
           "title": "Community manager y UX/UI Specialist",
           "place": "Fortune Acoustics",
           "description": "En Fortune Acoustics, mi trabajo es hacer que la experiencia digital sea más amable y efectiva para las personas. Actualmente estoy renovando nuestra tienda online para que la interfaz de usuario sea más intuitiva y atractiva. También estoy creando constantemente landing pages para mejorar la conversión. Al igual, me encargo de la gestión de redes sociales, creando contenido atractivo y relevante para nuestra audiencia, lo que nos ayuda a aumentar nuestro alcance y engagement."
@@ -176,17 +176,9 @@
       "titulo": "Rediseño e-comerce",
       "lugar": "Fortune Acoustics",
       "img": "/ecomerce.png",
-      "descripcion": "Rediseño de UX/UI del e-comerce de Fortune Acoustics para mejorar la experiencia de los usuarios y alentarlos a generar compras. El objetivo es crear una interfaz más atráctiva y moderna, para actualizar la imagen de la marca y facilitar la navegación de los usuarios.",
+      "descripcion": "El e-commerce de Fortune Acoustics tenía una tasa de abandono alta y una experiencia de navegación poco intuitiva. Lideré el rediseño completo de UX/UI: audité la experiencia actual, rediseñé la arquitectura de información y construí el nuevo sitio en WordPress.\nEl resultado es una interfaz moderna que simplifica el flujo de compra y refuerza la identidad de marca — estimando una mejora de al menos 30% en tiempo de permanencia y navegabilidad percibida.",
       "link": "https://www.fortuneacoustics.com/",
       "herramientas": ["Figma", "WordPress"]
-    },
-    {
-      "titulo": "Landing page promociones",
-      "lugar": "Fortune Acoustics",
-      "img": "/Landing promociones.png",
-      "descripcion": "Diseño y desarrollo de una landing page especial para promociones de Fortune Acoustics, la cuál tiene como objetivo ser un apoyo del e-comerce. La landing page está diseñada para ser atractiva y fácil de navegar, permitiendo a los usuarios encontrar rápidamente las promociones.",
-      "link": "https://promociones-fortune.vercel.app",
-      "herramientas": ["Figma", "Next.js", "Tailwind CSS"]
     },
     {
       "titulo": "Landing page cursos",
@@ -200,7 +192,7 @@
       "titulo": "Clarify",
       "lugar": "Innovatec 2024",
       "img": "/logo-clarify.jpeg",
-      "descripcion": "Diseño, desarrollo y gestión de un proyecto de app móvil para personas con discapacidad visual, la cual implementa un asistente de IA que ayuda a los usuarios a navegar su entorno. Ganadores del primer lugar de Innovatec 2024 a nivel local, tercer lugar a nivel regional y mención honorífica por participación destacada a nivel nacional. Si quieres ver el proyecto, puedes visitar la landing page creada por MarcoTheBigCreator.",
+      "descripcion": "Diseñé y lideré el desarrollo de Clarify, una app móvil con IA que actúa como 'ojos' para personas con discapacidad visual. El reto de diseño era doble: una interfaz funcional sin depender de la vista, y una narrativa humana que convenciera al jurado.\nCada decisión fue intencional — voz clara, vibraciones orientativas, alto contraste. Ganamos el primer lugar local, tercer lugar regional y mención honorífica nacional en Innovatec 2024.",
       "link": "https://clarify-page.vercel.app/es",
       "herramientas": ["Figma", "Flutter", "PyTorch", "Firebase"]
     },
@@ -208,7 +200,7 @@
       "titulo": "BudgetBuddy",
       "lugar": "HackDgo",
       "img": "/budget.png",
-      "descripcion": "Diseño y desarrollo de una aplicación web para ayudar a los usuarios a gestionar su presupuesto de manera eficiente a través de análisis interpretados con IA. Ganadora del tercer lugar en HackDgo 2024.",
+      "descripcion": "Diseñé y desarrollé BudgetBuddy en el hackathon HackDgo 2024: una app web que usa la API de OpenAI para analizar gastos y dar recomendaciones personalizadas de presupuesto en lenguaje natural.\nEl reto fue hacer que la IA se sintiera accesible — no técnica — para usuarios sin experiencia financiera. Terminamos en tercer lugar entre todos los equipos participantes.",
       "link": "https://www.figma.com/design/yNyVfRUHeYPqzdoj1iMx4O/CLARIFY?node-id=371-2&t=Nl9zEc3richVnWt6-1",
       "herramientas": ["Figma", "HTML", "CSS", "API de OpenAI"]
     }
