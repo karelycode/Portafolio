@@ -10,11 +10,9 @@ import { bodyFont, titleFont } from "@/config/fonts";
 
 import { useLocale } from "next-intl";
 
-// dentro del componente:
-const locale = useLocale();
-
 export const Banner = () => {
   const { t } = useTranslation();
+  const locale = useLocale();
   return (
     <motion.section
       id="banner"

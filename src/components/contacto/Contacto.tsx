@@ -9,11 +9,9 @@ import { bodyFont, titleFont } from "@/config/fonts";
 
 import { useLocale } from "next-intl";
 
-// dentro del componente:
-const locale = useLocale();
-
 export const Contacto = () => {
   const { t } = useTranslation();
+  const locale = useLocale();
 
   return (
     <AnimatedSection>
