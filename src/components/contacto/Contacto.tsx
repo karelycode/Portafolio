@@ -37,9 +37,10 @@ export const Contacto = () => {
                 : "/Karely-Duran-CV-EN.pdf"
             }
             download
-            className={`${titleFont.className}`}
           >
-            {t("navbarAccessibility.cv")}
+            <span className={`${bodyFont.className}`}>
+              {t("navbarAccessibility.cv")}
+            </span>
           </Button>
           <div className="flex gap-6 my-8">
             <a
