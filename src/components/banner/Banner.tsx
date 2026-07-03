@@ -8,6 +8,11 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { bodyFont, titleFont } from "@/config/fonts";
 
+import { useLocale } from "next-intl";
+
+// dentro del componente:
+const locale = useLocale();
+
 export const Banner = () => {
   const { t } = useTranslation();
   return (
@@ -60,7 +65,15 @@ export const Banner = () => {
               {t("navbarAccessibility.projects")}
             </Button>
           </Link>
-          <Button as="a" href="/cv-Karely Duran.pdf" download>
+          <Button
+            as="a"
+            href={
+              locale === "es"
+                ? "/Karely-Duran-CV-ES.pdf"
+                : "/Karely-Duran-CV-EN.pdf"
+            }
+            download
+          >
             <span className={`${bodyFont.className}`}>
               {t("navbarAccessibility.cv")}
             </span>

@@ -7,6 +7,11 @@ import { Button } from "../ui/moving-border";
 import { useTranslation } from "react-i18next";
 import { bodyFont, titleFont } from "@/config/fonts";
 
+import { useLocale } from "next-intl";
+
+// dentro del componente:
+const locale = useLocale();
+
 export const Contacto = () => {
   const { t } = useTranslation();
 
@@ -26,7 +31,11 @@ export const Contacto = () => {
           </p>
           <Button
             as="a"
-            href="/cv-Karely Duran.pdf"
+            href={
+              locale === "es"
+                ? "/Karely-Duran-CV-ES.pdf"
+                : "/Karely-Duran-CV-EN.pdf"
+            }
             download
             className={`${titleFont.className}`}
           >
