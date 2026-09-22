@@ -173,6 +173,14 @@
 
   "proyectos": [
     {
+      "titulo": "Rediseño landing page",
+      "lugar": "Nettcontrol",
+      "img": "/Landing nettcontrol.png",
+      "descripcion": "La página de Nettcontrol necesitaba un rediseño para mejorar la experiencia del usuario y fomentar la conversión. El objetivo era crear una interfaz más moderna y atractiva que refrescara la imagen de la marca y facilitara la navegación.",
+      "link": "https://nettcontrol.com/",
+      "herramientas": ["Figma", "WordPress"]
+    },
+    {
       "titulo": "Rediseño e-comerce",
       "lugar": "Fortune Acoustics",
       "img": "/ecomerce.png",
