@@ -45,7 +45,7 @@ export const AcercaDe = () => {
                 <span className="text-[#6a5af9] ">
                   {t("bioTitles.fromTitle")}:
                 </span>
-                <span> {t("bioInfo.ubicacion")}</span>
+                <span> {t("bioInfo.from")}</span>
               </div>
               <div>
                 <span className="text-[#6a5af9] ">
